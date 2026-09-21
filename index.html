@@ -483,15 +483,12 @@
         <!-- SCENARIO PART 3: THE BOARDROOM SHOWDOWN (TRADITIONAL VS ANALYST) -->
         <article class="mb-14 md:mb-20">
           <div class="text-center max-w-3xl mx-auto mb-10">
-            <!-- <span
-              class="inline-block bg-amber-50 text-amber-800 border border-amber-200 px-4 py-1 rounded-full text-xs font-bold mb-3 shadow-sm"
+            <h3
+              class="text-2xl md:text-4xl font-black text-slate-900 mb-3 leading-snug"
             >
-              في غرفة اجتماعات الإدارة
-            </span> -->
-            <h3 class="text-2xl md:text-4xl font-black text-slate-900 mb-3">
               والمشكلة الأكبر... إنك ممكن تكون HR شاطر جدًا في شغلك... لكن لما
               مديرك يسألك اي سؤال ليه علاقة بالأرقام تلاقي نفسك وقفت مكانك
-              <span class="text-red-500">وأنا مش عايزك تقع في الغلطة دي </span>
+              <span class="text-red-700">وأنا مش عايزك تقع في الغلطة دي </span>
             </h3>
             <p class="text-slate-600 text-sm md:text-lg font-medium">
               لأن الفرق بين HR operationnel و HR بيعتمد على الـAnalytics مش إن
@@ -499,147 +496,149 @@
             </p>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-            <!-- Case 1: Operational HR -->
+          <!-- Comparison Table / Matrix Card -->
+          <div
+            class="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden max-w-5xl mx-auto"
+          >
+            <!-- Headers -->
             <div
-              class="bg-white rounded-3xl p-6 md:p-8 border-2 border-slate-200 shadow-sm relative overflow-hidden flex flex-col justify-between"
+              class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x md:divide-x-reverse divide-slate-200"
             >
-              <div class="absolute top-0 right-0 left-0 h-2 bg-slate-300"></div>
-              <div>
-                <div class="flex items-center justify-between mb-4">
-                  <div class="flex items-center gap-3">
-                    <div
-                      class="w-10 h-10 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center font-black text-sm"
-                    >
-                      <i class="fas fa-user"></i>
-                    </div>
-                    <div>
-                      <h4
-                        class="font-extrabold text-slate-800 text-base md:text-lg"
-                      >
-                        HR تقليدي (Operational)
-                      </h4>
-                      <span class="text-xs font-bold text-red-500"
-                        >يعتمد على الحدس والتخمين</span
-                      >
-                    </div>
+              <!-- Header 1: Traditional HR -->
+              <div
+                class="bg-slate-100/80 p-5 md:p-6 flex items-center justify-between"
+              >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-10 h-10 rounded-xl bg-white text-slate-500 flex items-center justify-center text-base shadow-xs"
+                  >
+                    <i class="fas fa-user"></i>
                   </div>
-                  <span
-                    class="w-7 h-7 rounded-full bg-red-100 text-red-500 flex items-center justify-center text-sm font-black"
-                  >
-                    ✕
-                  </span>
+                  <div>
+                    <h4
+                      class="font-extrabold text-slate-800 text-base md:text-lg"
+                    >
+                      HR تقليدي (Operational)
+                    </h4>
+                  </div>
                 </div>
-
-                <!-- Speech Bubble -->
-                <div
-                  class="bg-slate-50 border border-slate-200/80 rounded-2xl p-4 md:p-5 mb-5 relative"
+                <span
+                  class="w-7 h-7 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center text-xs font-black"
                 >
-                  <p
-                    class="text-slate-800 font-bold text-base md:text-lg leading-relaxed"
-                  >
-                    «أنا حاسس يا فندم إن الموظفين مش مبسوطين، والمشكلة شكلها في
-                    قسم المبيعات!»
-                  </p>
-                  <span class="text-xs text-slate-400 mt-2 block font-medium">
-                    رد الإدارة: «دي مجرد انطباعات.. فين الإثبات؟»
-                  </span>
-                </div>
-
-                <ul class="space-y-3 text-sm font-semibold text-slate-600 mb-6">
-                  <li class="flex items-center gap-2">
-                    <i class="fas fa-file-lines text-slate-400 text-xs"></i>
-                    <span>يقدم مجرد تقارير وجداول ممتلئة بأرقام صامتة.</span>
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <i class="fas fa-eye-slash text-slate-400 text-xs"></i>
-                    <span>لا يربط بين حركة الموظفين وتكلفة البيزنس.</span>
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <i class="fas fa-comment-slash text-slate-400 text-xs"></i>
-                    <span>صوته ضعيف في اتخاذ قرارات الإدارة العليا.</span>
-                  </li>
-                </ul>
+                  ✕
+                </span>
               </div>
 
+              <!-- Header 2: HR Analyst -->
               <div
-                class="bg-slate-100 text-slate-600 rounded-xl p-3 text-center text-xs font-bold"
+                class="bg-primary text-white p-5 md:p-6 flex items-center justify-between"
               >
-                النتيجة: عمل مجهد وروتيني بدون تقدير استراتيجي.
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-10 h-10 rounded-xl bg-white/20 text-white flex items-center justify-center text-base backdrop-blur-xs"
+                  >
+                    <i class="fas fa-chart-pie"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-extrabold text-white text-base md:text-lg">
+                      محلل موارد بشرية (HR Analyst)
+                    </h4>
+                  </div>
+                </div>
+                <span
+                  class="w-7 h-7 rounded-full bg-emerald-400 text-slate-900 flex items-center justify-center text-xs font-black"
+                >
+                  ✓
+                </span>
               </div>
             </div>
 
-            <!-- Case 2: HR Analyst -->
+            <!-- Row 1: The Dialogue / Quote -->
             <div
-              class="bg-gradient-to-br from-white to-blue-50/50 rounded-3xl p-6 md:p-8 border-2 border-secondary shadow-md relative overflow-hidden flex flex-col justify-between"
+              class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x md:divide-x-reverse divide-slate-200 border-t border-slate-200"
             >
-              <div
-                class="absolute top-0 right-0 left-0 h-2 bg-gradient-to-r from-secondary to-accent"
-              ></div>
-              <div>
-                <div class="flex items-center justify-between mb-4">
-                  <div class="flex items-center gap-3">
-                    <div
-                      class="w-10 h-10 rounded-full bg-blue-100 text-primary flex items-center justify-center font-black text-sm"
-                    >
-                      <i class="fas fa-chart-pie"></i>
-                    </div>
-                    <div>
-                      <h4
-                        class="font-extrabold text-primary text-base md:text-lg"
-                      >
-                        محلل موارد بشرية (HR Analyst)
-                      </h4>
-                      <span class="text-xs font-bold text-emerald-600"
-                        >يتحدث بلغة البيانات والأرباح</span
-                      >
-                    </div>
-                  </div>
-                  <span
-                    class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-sm font-black"
-                  >
-                    ✓
-                  </span>
-                </div>
-
-                <!-- Speech Bubble -->
-                <div
-                  class="bg-blue-50/80 border border-blue-200/80 rounded-2xl p-4 md:p-5 mb-5 relative shadow-inner"
+              <div class="p-6 bg-slate-50/50 flex flex-col justify-center">
+                <p
+                  class="text-slate-700 font-semibold text-base md:text-lg leading-relaxed"
                 >
-                  <p
-                    class="text-primary font-extrabold text-base md:text-lg leading-relaxed"
-                  >
-                    «البيانات بتوضح إن معدل الـTurnover زاد 18% في قطاع المبيعات
-                    بسبب X، ودا بيكلفنا 150 ألف جنيه إضافية.. ودي خطة الحل
-                    بالأرقام.»
-                  </p>
-                  <span class="text-xs text-blue-700 mt-2 block font-bold">
-                    رد الإدارة: «عظيم جداً.. خطتك معتمدة للتنفيذ فوراً.»
-                  </span>
-                </div>
-
-                <ul class="space-y-3 text-sm font-bold text-slate-800 mb-6">
-                  <li class="flex items-center gap-2">
-                    <i class="fas fa-check-circle text-emerald-500 text-xs"></i>
-                    <span
-                      >يقدم لوحات تحكم تفاعلية (Dashboards) حية وواضحة.</span
-                    >
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <i class="fas fa-check-circle text-emerald-500 text-xs"></i>
-                    <span>يحول مشاكل الموارد البشرية إلى أرقام وROI مالي.</span>
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <i class="fas fa-check-circle text-emerald-500 text-xs"></i>
-                    <span>شريك أساسي ومسموع على طاولة القرار الاستراتيجي.</span>
-                  </li>
-                </ul>
+                  «أنا حاسس يا فندم إن الموظفين مش مبسوطين، والمشكلة شكلها في
+                  قسم المبيعات!»
+                </p>
               </div>
+              <div class="p-6 bg-blue-50/40 flex flex-col justify-center">
+                <p
+                  class="text-slate-900 font-bold text-base md:text-lg leading-relaxed"
+                >
+                  «البيانات بتوضح إن معدل الـTurnover زاد 18% في قطاع المبيعات
+                  بسبب X، ودا بيكلفنا 150 ألف جنيه إضافية.. ودي خطة الحل
+                  بالأرقام.»
+                </p>
+              </div>
+            </div>
 
-              <div
-                class="bg-secondary text-white rounded-xl p-3 text-center text-xs font-extrabold shadow-sm"
-              >
-                النتيجة: موقع قيادي، ترقيات سريعة، وقيمة سوقية مضاعفة.
+            <!-- Row 2: Management Reaction -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x md:divide-x-reverse divide-slate-200 border-t border-slate-200"
+            >
+              <div class="p-4 md:p-5 bg-rose-50/50 flex items-center gap-3">
+                <i
+                  class="fas fa-circle-xmark text-rose-500 text-base shrink-0"
+                ></i>
+                <span class="text-xs md:text-sm font-bold text-rose-900">
+                  رد الإدارة: «دي مجرد انطباعات.. فين الإثبات؟»
+                </span>
+              </div>
+              <div class="p-4 md:p-5 bg-emerald-50/70 flex items-center gap-3">
+                <i
+                  class="fas fa-circle-check text-emerald-600 text-base shrink-0"
+                ></i>
+                <span class="text-xs md:text-sm font-black text-emerald-950">
+                  رد الإدارة: «عظيم جداً.. خطتك معتمدة للتنفيذ فوراً.»
+                </span>
+              </div>
+            </div>
+
+            <!-- Row 3: First Bullet Point -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x md:divide-x-reverse divide-slate-200 border-t border-slate-200"
+            >
+              <div class="p-4 md:p-5 flex items-center gap-3 bg-white">
+                <i
+                  class="fas fa-file-lines text-slate-400 text-base shrink-0"
+                ></i>
+                <span class="text-sm md:text-base font-semibold text-slate-600">
+                  واحد بيقدم Report.
+                </span>
+              </div>
+              <div class="p-4 md:p-5 flex items-center gap-3 bg-blue-50/20">
+                <i
+                  class="fas fa-check-circle text-emerald-500 text-base shrink-0"
+                ></i>
+                <span class="text-sm md:text-base font-bold text-slate-900">
+                  والتاني بيقدم Insight.
+                </span>
+              </div>
+            </div>
+
+            <!-- Row 4: Second Bullet Point -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x md:divide-x-reverse divide-slate-200 border-t border-slate-200"
+            >
+              <div class="p-4 md:p-5 flex items-center gap-3 bg-white">
+                <i
+                  class="fas fa-eye-slash text-slate-400 text-base shrink-0"
+                ></i>
+                <span class="text-sm md:text-base font-semibold text-slate-600">
+                  واحد بيعرض أرقام.
+                </span>
+              </div>
+              <div class="p-4 md:p-5 flex items-center gap-3 bg-blue-50/20">
+                <i
+                  class="fas fa-check-circle text-emerald-500 text-base shrink-0"
+                ></i>
+                <span class="text-sm md:text-base font-bold text-slate-900">
+                  والتاني بيستخدم الأرقام عشان ياخد قرار.
+                </span>
               </div>
             </div>
           </div>
@@ -672,7 +671,7 @@
               </div>
 
               <div
-                class="w-10 h-10 rounded-full bg-white text-accent flex items-center justify-center shrink-0 rotate-90 sm:rotate-0"
+                class="w-10 h-10 rounded-full bg-white text-accent flex items-center justify-center shrink-0 -rotate-90 sm:rotate-0"
               >
                 <i class="fas fa-arrow-left"></i>
               </div>
