@@ -1,0 +1,2236 @@
+<!doctype html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>برنامج محلل الموارد البشرية | HR Analyst Program - EraaPro</title>
+    <meta
+      name="description"
+      content="الكورس الأقوى علشان تتحول من HR Operational لـ HR Analyst مع د. هبة السيد في EraaPro. تعلم تحليل بيانات الموارد البشرية وPower BI وExcel لاتخاذ قرارات مدروسة."
+    />
+
+    <!-- Google Fonts: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3575B8", // Navy
+              secondary: "#3b82f6", // Blue
+              accent: "#04663A", // Amber/Gold
+              dark: "#0f172a", // Slate Dark
+              brandIce: "#EFF6FF",
+            },
+            fontFamily: {
+              sans: ["Cairo", "sans-serif"],
+              cairo: ["Cairo", "sans-serif"],
+            },
+            boxShadow: {
+              "3d": "0 10px 30px -10px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+              "3d-hover":
+                "0 20px 40px -10px rgba(0, 0, 0, 0.15), 0 8px 10px -2px rgba(0, 0, 0, 0.1)",
+              glass: "0 8px 32px 0 rgba(31, 38, 135, 0.12)",
+              glow: "0 0 50px -10px rgba(59, 130, 246, 0.5)",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0px)" },
+                "50%": { transform: "translateY(-8px)" },
+              },
+              pulseGlow: {
+                "0%, 100%": { opacity: "0.5" },
+                "50%": { opacity: "0.85" },
+              },
+              shine: {
+                "100%": { transform: "translateX(100%)" },
+              },
+            },
+            animation: {
+              float: "float 6s ease-in-out infinite",
+              pulseGlow: "pulseGlow 4s ease-in-out infinite",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Wistia Player Scripts -->
+    <script src="https://fast.wistia.com/player.js" async=""></script>
+    <script
+      src="https://fast.wistia.com/embed/fxzuzvthf7.js"
+      async=""
+      type="module"
+    ></script>
+    <style>
+      wistia-player[media-id="fxzuzvthf7"]:not(:defined) {
+        background: center / contain no-repeat
+          url("https://fast.wistia.com/embed/medias/fxzuzvthf7/swatch");
+        display: block;
+        filter: blur(5px);
+        padding-top: 56.25%;
+      }
+    </style>
+  </head>
+  <body
+    class="font-cairo text-slate-800 bg-[#f8fafc] antialiased leading-relaxed overflow-x-hidden selection:bg-accent selection:text-white"
+  >
+    <!-- ==================== HEADER & NAVBAR ==================== -->
+    <header class="relative z-50">
+      <!-- Fixed Semantic Navigation -->
+      <nav
+        class="fixed top-0 left-0 w-full backdrop-blur-md transition-all duration-300"
+        aria-label="التنقل الرئيسي"
+      >
+        <div
+          class="max-w-6xl mx-auto px-4 sm:px-6 py-2.5 md:py-3 flex justify-between items-center"
+        >
+          <!-- Logo Side (RTL Right) -->
+          <a href="index.html" class="flex items-center gap-2" title="EraaPro">
+            <img
+              src="images/logo.webp"
+              alt="EraaPro - Build Your Pro Career"
+              class="w-[100px] md:w-[120px]"
+            />
+          </a>
+
+          <!-- Register Action Button (RTL Left) -->
+          <a
+            href="#registration-form"
+            class="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-accent px-6 py-2 sm:px-7 sm:py-2.5 text-sm sm:text-base font-extrabold text-white shadow-lg shadow-amber-500/25 ring-1 ring-orange-400/40 transition-all duration-300 hover:scale-[1.04] active:scale-95"
+          >
+            <!-- Glowing Shimmer Sweep Reflection -->
+            <span
+              class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 ease-in-out group-hover:translate-x-full"
+            ></span>
+            <span class="relative z-10 flex items-center gap-2">
+              <span>سجل الان</span>
+            </span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main class="relative">
+      <!-- ==================== HERO SECTION ==================== -->
+      <section
+        id="hero"
+        class="relative pt-24 pb-20 md:pt-32 md:pb-28 px-4 overflow-hidden bg-white text-slate-800"
+      >
+        <!-- Soft Ambient Light Glows for depth on white background -->
+        <div
+          class="absolute -top-32 left-1/2 -translate-x-1/2 w-[850px] h-[500px] bg-blue-100/40 rounded-full blur-[120px] pointer-events-none"
+        ></div>
+        <div
+          class="absolute top-1/3 -left-32 w-[420px] h-[420px] bg-sky-100/40 rounded-full blur-[100px] pointer-events-none"
+        ></div>
+        <div
+          class="absolute top-1/3 -right-32 w-[420px] h-[420px] bg-amber-100/30 rounded-full blur-[100px] pointer-events-none"
+        ></div>
+
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+          <!-- Main Hero Headline -->
+          <h1
+            class="text-2xl sm:text-4xl md:text-6xl font-extrabold leading-tight md:leading-tight mb-6 text-slate-900"
+          >
+            الكورس الأقوى علشان تتحول من
+            <br class="hidden md:block" />
+            <span class="block mt-2 sm:mt-3">
+              <bdi class="text-primary font-black">HR Operationnel</bdi>
+              <span class="mx-2 text-slate-500 font-bold text-xl md:text-5xl"
+                >لـ</span
+              >
+              <bdi class="text-accent font-black">HR Analyst</bdi>
+            </span>
+          </h1>
+
+          <!-- Hero Paragraph -->
+          <p
+            class="text-base sm:text-lg md:text-xl text-slate-600 mb-8 md:mb-12 max-w-4xl mx-auto leading-relaxed md:leading-loose font-medium px-2"
+          >
+            انا عارف انك دورت كتير و بتفكر تطور من نفسك دايما كـ
+            <strong class="text-slate-900 font-bold">HR</strong> و علشان تكون
+            مميز في السوق وواحدة من أهم الخطوات اللي انت بتفكر فيها كـ<strong
+              class="text-slate-900 font-bold"
+              >HR</strong
+            >
+            انك تحول كل شغلك لارقام تقدر تبيني عليها قرارات علشان كلامك يكون
+            مسموع عند الاداره و تقدر تراقب و تعمل كنترول على كل الأقسام بشكل
+            سريع .
+          </p>
+
+          <!-- Quick Action Search/Register Bar on Light BG -->
+          <form
+            action="#registration-form"
+            class="max-w-xl mx-auto bg-white border-2 border-slate-200 focus-within:border-secondary shadow-lg shadow-blue-900/5 rounded-full p-1.5 sm:p-2 flex items-center justify-between gap-2 mb-12 transition-all duration-300 focus-within:ring-4 focus-within:ring-blue-100"
+          >
+            <input
+              type="text"
+              placeholder="اكتب رقم الواتساب أو بريدك للتسجيل..."
+              class="w-full bg-transparent text-slate-800 placeholder-slate-400 px-4 sm:px-6 py-2.5 text-sm sm:text-base outline-none text-right font-medium"
+            />
+            <button
+              type="submit"
+              class="bg-accent hover:from-amber-500 hover:to-orange-700 text-white font-extrabold px-6 sm:px-8 py-2.5 sm:py-3 rounded-full whitespace-nowrap text-sm sm:text-base shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-95 border border-orange-400/50"
+            >
+              سجل الآن
+            </button>
+          </form>
+
+          <!-- Video Embed (Wistia) Framed inside Premium Card -->
+          <figure
+            class="max-w-4xl mx-auto relative p-2.5 sm:p-4 rounded-2xl md:rounded-3xl border border-blue-200 backdrop-blur-md transform hover:scale-[1.01] transition-transform duration-500"
+          >
+            <div
+              class="aspect-video w-full rounded-xl md:rounded-2xl overflow-hidden relative shadow-inner bg-slate-950"
+            >
+              <wistia-player
+                media-id="fxzuzvthf7"
+                aspect="1.7777777777777777"
+                unique-id="wistia-fxzuzvthf7-16"
+              ></wistia-player>
+            </div>
+            <figcaption class="sr-only">
+              فيديو تعريفي لبرنامج محلل الموارد البشرية HR Analyst مع د. هبة
+              السيد
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ==================== PROBLEM & INSIGHTS SECTION (UI/UX STORYTELLING SCENARIO) ==================== -->
+      <section
+        id="problem-insights"
+        class="py-16 md:py-28 px-4 max-w-6xl mx-auto relative z-20"
+      >
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-14 md:mb-20">
+          <h2
+            class="text-2xl sm:text-4xl md:text-5xl font-black text-slate-900 leading-tight mb-5"
+          >
+            وأكيد سألت نفسك...
+            <span
+              class="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-600 to-accent"
+            >
+              إزاي أبدأ HR Analytics من الصفر؟
+            </span>
+          </h2>
+          <p
+            class="text-base md:text-xl text-slate-600 font-medium leading-relaxed md:leading-loose"
+          >
+            وإنت عمرك ما اشتغلت على
+            <span class="font-bold text-slate-800">Data Analysis</span> قبل كده!
+            إزاي تجمع وتحلل بيانات الـHR، وتحوّل الأرقام لـInsights تساعدك تاخد
+            قرارات صح بأدوات زي
+            <span class="text-primary font-bold">Excel</span> و<span
+              class="text-accent font-bold"
+              >Power BI</span
+            >
+            باحترافية، وتتكلم بلغة الأرقام مش مجرد الإحساس.
+          </p>
+        </div>
+
+        <!-- SCENARIO PART 1: THE EVOLUTION OF HR (PAST VS PRESENT) -->
+        <article class="mb-14 md:mb-20">
+          <div
+            class="bg-white rounded-3xl p-6 md:p-12 border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden"
+          >
+            <!-- Decorative Subtle Accent -->
+            <div
+              class="absolute top-0 right-0 w-48 h-48 bg-blue-50/60 rounded-full blur-2xl pointer-events-none -mr-16 -mt-16"
+            ></div>
+
+            <div class="relative z-10">
+              <div class="flex items-center gap-3 mb-6">
+                <div
+                  class="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-blue-50 text-secondary flex items-center justify-center text-lg md:text-xl shrink-0 border border-blue-100 shadow-sm"
+                >
+                  <i class="fas fa-clock-rotate-left"></i>
+                </div>
+                <div>
+                  <h3
+                    class="text-xl md:text-3xl font-extrabold text-slate-900 mb-3"
+                  >
+                    اللي بتقرأه دلوقتي كنت أتمنى حد يقولهولي من بدري...
+                  </h3>
+                  <p class="text-xs md:text-sm font-bold text-slate-400">
+                    قواعد اللعبة اتغيرت تماماً في سوق العمل
+                  </p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+                <!-- Past HR -->
+                <div
+                  class="lg:col-span-5 bg-slate-50 border border-slate-200/70 rounded-2xl p-5 md:p-6 flex flex-col justify-between"
+                >
+                  <div>
+                    <div class="flex items-center justify-between mb-3">
+                      <span
+                        class="text-xs font-black px-3 py-1 rounded-full bg-slate-200 text-slate-700"
+                        >زمان (Traditional HR)</span
+                      >
+                    </div>
+                    <p
+                      class="text-slate-600 font-medium text-sm md:text-base leading-relaxed mb-4"
+                    >
+                      كان كفاية إنك تكون شاطر في الـRecruitment، تعرف تعمل
+                      Interview، تتابع Attendance وPayroll وPerformance، وتتعامل
+                      كويس مع الموظفين.
+                    </p>
+                  </div>
+                  <div
+                    class="pt-3 border-t border-slate-200 text-xs font-bold text-slate-400"
+                  >
+                    التركيز: تنفيذ المهام الروتينية اليومية فقط.
+                  </div>
+                </div>
+
+                <!-- Shift Arrow (Desktop) -->
+                <div
+                  class="hidden lg:flex lg:col-span-2 items-center justify-center text-2xl text-accent font-black"
+                >
+                  <div
+                    class="w-12 h-12 rounded-full text-accent flex items-center justify-center shadow-md"
+                  >
+                    <i class="fas fa-arrow-left"></i>
+                  </div>
+                </div>
+
+                <!-- Present HR Demand -->
+                <div
+                  class="lg:col-span-5 bg-gradient-to-br from-blue-50/80 to-white border-2 border-secondary/30 rounded-2xl p-5 md:p-6 shadow-sm flex flex-col justify-between"
+                >
+                  <div>
+                    <div class="flex items-center justify-between mb-3">
+                      <span
+                        class="text-xs font-black px-3 py-1 rounded-full bg-secondary text-white shadow-sm"
+                        >دلوقتي (Data-Driven Era)</span
+                      >
+                    </div>
+                    <p
+                      class="text-slate-800 font-bold text-sm md:text-base mb-3"
+                    >
+                      الشركات بقت تدور على HR يفهم الأبعاد دي:
+                    </p>
+                    <ul
+                      class="space-y-2.5 text-xs md:text-sm font-semibold text-slate-700"
+                    >
+                      <li class="flex items-start gap-2">
+                        <i
+                          class="fas fa-chart-line text-secondary mt-1 shrink-0"
+                        ></i>
+                        <span>
+                          الأرقام بتقول إيه؟ ليه الـTurnover بيزيد؟ مين أكتر ناس
+                          معرضة إنها تمشي؟
+                        </span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <i
+                          class="fas fa-coins text-secondary mt-1 shrink-0"
+                        ></i>
+                        <span
+                          >إيه تكلفة الـHiring؟ هل الـTraining اللي الشركة بتدفع
+                          فيه فلوس بيجيب نتيجة فعلًا؟
+                        </span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <i
+                          class="fas fa-lightbulb text-accent mt-1 shrink-0"
+                        ></i>
+                        <span
+                          >وإيه القرارات اللي المفروض ناخدها بناءً على البيانات؟
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="mt-4 pt-3 border-t border-blue-100 flex items-center justify-between text-xs font-black text-primary"
+                  >
+                    <span>وهنا بالتحديد ظهر مجال:</span>
+                    <span class="text-accent font-black text-sm"
+                      >HR Analytics</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- SCENARIO PART 2: THE CONFUSION MATRIX (WHERE DO I START?) -->
+        <article class="mb-14 md:mb-20">
+          <div
+            class="bg-gradient-to-b from-slate-900 to-slate-950 text-white rounded-3xl p-6 md:p-12 shadow-xl border border-slate-800 relative overflow-hidden"
+          >
+            <div
+              class="absolute -left-20 -bottom-20 w-64 h-64 bg-accent/15 rounded-full blur-3xl pointer-events-none"
+            ></div>
+            <div
+              class="absolute -right-20 -top-20 w-64 h-64 bg-secondary/15 rounded-full blur-3xl pointer-events-none"
+            ></div>
+
+            <div class="relative z-10">
+              <div class="text-center max-w-2xl mx-auto mb-10">
+                <h3 class="text-2xl md:text-4xl font-extrabold mb-3">
+                  بس المشكلة إن محدش قالك تبدأ منين!
+                </h3>
+                <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                  ممكن تكون سمعت كتير جدًا: اتعلم HR Analytics. او اتعلم Power
+                  BI او اتعلم Data Analysis. فتدخل تدور...تلاقي Excel.وبعده
+                  Power BI.وتلاقي مليون فيديو وكورس على الإنترنت .
+                  <span class="text-accent font-bold"> فتسأل نفسك:</span>
+                </p>
+              </div>
+
+              <!-- 4 Friction Questions Grid -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Question 1 -->
+                <div
+                  class="bg-slate-800/80 hover:bg-slate-800 border border-slate-700/70 rounded-2xl p-5 transition-all duration-300 group hover:-translate-y-1"
+                >
+                  <div
+                    class="w-10 h-10 rounded-xl bg-slate-700 text-amber-400 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition-transform"
+                  >
+                    <i class="fas fa-play"></i>
+                  </div>
+                  <h4 class="font-bold text-base text-white mb-2">
+                    أبدأ بإيه؟
+                  </h4>
+                  <p class="text-xs text-slate-400 leading-relaxed">
+                    وإيه اللي محتاجه فعلياً كـHR في شغلي اليومي بدون تعقيدات
+                    نظرية؟
+                  </p>
+                </div>
+
+                <!-- Question 2 -->
+                <div
+                  class="bg-slate-800/80 hover:bg-slate-800 border border-slate-700/70 rounded-2xl p-5 transition-all duration-300 group hover:-translate-y-1"
+                >
+                  <div
+                    class="w-10 h-10 rounded-xl bg-slate-700 text-blue-400 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition-transform"
+                  >
+                    <i class="fas fa-user-gear"></i>
+                  </div>
+                  <h4 class="font-bold text-base text-white mb-2">
+                    هل لازم أكون Data Analyst؟
+                  </h4>
+                  <p class="text-xs text-slate-400 leading-relaxed">
+                    هل لازم أكون مبرمج أو إحصائي عشان أتعلم وأطبق HR Analytics؟
+                  </p>
+                </div>
+
+                <!-- Question 3 -->
+                <div
+                  class="bg-slate-800/80 hover:bg-slate-800 border border-slate-700/70 rounded-2xl p-5 transition-all duration-300 group hover:-translate-y-1"
+                >
+                  <div
+                    class="w-10 h-10 rounded-xl bg-slate-700 text-emerald-400 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition-transform"
+                  >
+                    <i class="fas fa-file-excel"></i>
+                  </div>
+                  <h4 class="font-bold text-base text-white mb-2">
+                    هل لازم أكون خبير Excel؟
+                  </h4>
+                  <p class="text-xs text-slate-400 leading-relaxed">
+                    وهل برامج زي Power BI صعبة ومعقدة للمبتدئين في تحليل
+                    البيانات؟
+                  </p>
+                </div>
+
+                <!-- Question 4 -->
+                <div
+                  class="bg-slate-800/80 hover:bg-slate-800 border border-slate-700/70 rounded-2xl p-5 transition-all duration-300 group hover:-translate-y-1"
+                >
+                  <div
+                    class="w-10 h-10 rounded-xl bg-slate-700 text-purple-400 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition-transform"
+                  >
+                    <i class="fas fa-briefcase"></i>
+                  </div>
+                  <h4 class="font-bold text-base text-white mb-2">
+                    هل هيفيدني في وظيفتي؟
+                  </h4>
+                  <p class="text-xs text-slate-400 leading-relaxed">
+                    هل هينعكس ده فعلاً على مكانتي في الشركة، ترقيتي، وقيمة
+                    مرتبي؟
+                  </p>
+                </div>
+              </div>
+
+              <!-- Clarification Alert -->
+            </div>
+          </div>
+        </article>
+
+        <!-- SCENARIO PART 3: THE BOARDROOM SHOWDOWN (TRADITIONAL VS ANALYST) -->
+        <article class="mb-14 md:mb-20">
+          <div class="text-center max-w-3xl mx-auto mb-10">
+            <!-- <span
+              class="inline-block bg-amber-50 text-amber-800 border border-amber-200 px-4 py-1 rounded-full text-xs font-bold mb-3 shadow-sm"
+            >
+              في غرفة اجتماعات الإدارة
+            </span> -->
+            <h3 class="text-2xl md:text-4xl font-black text-slate-900 mb-3">
+              والمشكلة الأكبر... إنك ممكن تكون HR شاطر جدًا في شغلك... لكن لما
+              مديرك يسألك اي سؤال ليه علاقة بالأرقام تلاقي نفسك وقفت مكانك
+              <span class="text-red-500">وأنا مش عايزك تقع في الغلطة دي </span>
+            </h3>
+            <p class="text-slate-600 text-sm md:text-lg font-medium">
+              لأن الفرق بين HR operationnel و HR بيعتمد على الـAnalytics مش إن
+              واحد فيهم أذكى من التاني.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+            <!-- Case 1: Operational HR -->
+            <div
+              class="bg-white rounded-3xl p-6 md:p-8 border-2 border-slate-200 shadow-sm relative overflow-hidden flex flex-col justify-between"
+            >
+              <div class="absolute top-0 right-0 left-0 h-2 bg-slate-300"></div>
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-10 h-10 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center font-black text-sm"
+                    >
+                      <i class="fas fa-user"></i>
+                    </div>
+                    <div>
+                      <h4
+                        class="font-extrabold text-slate-800 text-base md:text-lg"
+                      >
+                        HR تقليدي (Operational)
+                      </h4>
+                      <span class="text-xs font-bold text-red-500"
+                        >يعتمد على الحدس والتخمين</span
+                      >
+                    </div>
+                  </div>
+                  <span
+                    class="w-7 h-7 rounded-full bg-red-100 text-red-500 flex items-center justify-center text-sm font-black"
+                  >
+                    ✕
+                  </span>
+                </div>
+
+                <!-- Speech Bubble -->
+                <div
+                  class="bg-slate-50 border border-slate-200/80 rounded-2xl p-4 md:p-5 mb-5 relative"
+                >
+                  <p
+                    class="text-slate-800 font-bold text-base md:text-lg leading-relaxed"
+                  >
+                    «أنا حاسس يا فندم إن الموظفين مش مبسوطين، والمشكلة شكلها في
+                    قسم المبيعات!»
+                  </p>
+                  <span class="text-xs text-slate-400 mt-2 block font-medium">
+                    رد الإدارة: «دي مجرد انطباعات.. فين الإثبات؟»
+                  </span>
+                </div>
+
+                <ul class="space-y-3 text-sm font-semibold text-slate-600 mb-6">
+                  <li class="flex items-center gap-2">
+                    <i class="fas fa-file-lines text-slate-400 text-xs"></i>
+                    <span>يقدم مجرد تقارير وجداول ممتلئة بأرقام صامتة.</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="fas fa-eye-slash text-slate-400 text-xs"></i>
+                    <span>لا يربط بين حركة الموظفين وتكلفة البيزنس.</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="fas fa-comment-slash text-slate-400 text-xs"></i>
+                    <span>صوته ضعيف في اتخاذ قرارات الإدارة العليا.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="bg-slate-100 text-slate-600 rounded-xl p-3 text-center text-xs font-bold"
+              >
+                النتيجة: عمل مجهد وروتيني بدون تقدير استراتيجي.
+              </div>
+            </div>
+
+            <!-- Case 2: HR Analyst -->
+            <div
+              class="bg-gradient-to-br from-white to-blue-50/50 rounded-3xl p-6 md:p-8 border-2 border-secondary shadow-md relative overflow-hidden flex flex-col justify-between"
+            >
+              <div
+                class="absolute top-0 right-0 left-0 h-2 bg-gradient-to-r from-secondary to-accent"
+              ></div>
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="w-10 h-10 rounded-full bg-blue-100 text-primary flex items-center justify-center font-black text-sm"
+                    >
+                      <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div>
+                      <h4
+                        class="font-extrabold text-primary text-base md:text-lg"
+                      >
+                        محلل موارد بشرية (HR Analyst)
+                      </h4>
+                      <span class="text-xs font-bold text-emerald-600"
+                        >يتحدث بلغة البيانات والأرباح</span
+                      >
+                    </div>
+                  </div>
+                  <span
+                    class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-sm font-black"
+                  >
+                    ✓
+                  </span>
+                </div>
+
+                <!-- Speech Bubble -->
+                <div
+                  class="bg-blue-50/80 border border-blue-200/80 rounded-2xl p-4 md:p-5 mb-5 relative shadow-inner"
+                >
+                  <p
+                    class="text-primary font-extrabold text-base md:text-lg leading-relaxed"
+                  >
+                    «البيانات بتوضح إن معدل الـTurnover زاد 18% في قطاع المبيعات
+                    بسبب X، ودا بيكلفنا 150 ألف جنيه إضافية.. ودي خطة الحل
+                    بالأرقام.»
+                  </p>
+                  <span class="text-xs text-blue-700 mt-2 block font-bold">
+                    رد الإدارة: «عظيم جداً.. خطتك معتمدة للتنفيذ فوراً.»
+                  </span>
+                </div>
+
+                <ul class="space-y-3 text-sm font-bold text-slate-800 mb-6">
+                  <li class="flex items-center gap-2">
+                    <i class="fas fa-check-circle text-emerald-500 text-xs"></i>
+                    <span
+                      >يقدم لوحات تحكم تفاعلية (Dashboards) حية وواضحة.</span
+                    >
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="fas fa-check-circle text-emerald-500 text-xs"></i>
+                    <span>يحول مشاكل الموارد البشرية إلى أرقام وROI مالي.</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="fas fa-check-circle text-emerald-500 text-xs"></i>
+                    <span>شريك أساسي ومسموع على طاولة القرار الاستراتيجي.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="bg-secondary text-white rounded-xl p-3 text-center text-xs font-extrabold shadow-sm"
+              >
+                النتيجة: موقع قيادي، ترقيات سريعة، وقيمة سوقية مضاعفة.
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- SCENARIO PART 4: THE TRANSFORMATION BRIDGE -->
+        <article
+          class="bg-primary text-white rounded-3xl p-8 md:p-14 shadow-2xl relative overflow-hidden text-center"
+        >
+          <div class="relative z-10 max-w-4xl mx-auto">
+            <h3 class="text-2xl md:text-4xl font-extrabold mb-4 leading-tight">
+              وعشان كده في <span class="text-accent">EraaPro</span> عملنا برنامج
+              HR Analyst.
+            </h3>
+            <p
+              class="text-sm md:text-lg text-blue-100 font-medium mb-8 leading-relaxed"
+            >
+              مش عشان نعلمك شوية Tools وخلاص... لكن عشان ننقلك خطوة بخطوة من:
+            </p>
+
+            <!-- Visual Flow Steps -->
+            <div
+              class="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-5"
+            >
+              <div
+                class="w-full sm:w-auto flex-1 bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl font-bold text-sm md:text-base text-slate-200"
+              >
+                <div class="text-xs text-slate-400 mb-1">المرحلة السابقة</div>
+                <span>HR بيتعامل مع البيانات</span>
+              </div>
+
+              <div
+                class="w-10 h-10 rounded-full bg-white text-accent flex items-center justify-center shrink-0 rotate-90 sm:rotate-0"
+              >
+                <i class="fas fa-arrow-left"></i>
+              </div>
+
+              <div
+                class="w-full sm:w-auto flex-1 bg-white text-slate-900 p-4 rounded-2xl font-black text-sm md:text-base shadow-xl border-2 border-accent"
+              >
+                <div class="text-xs text-secondary mb-1 font-bold">
+                  المرحلة القادمة
+                </div>
+                <span class="text-primary">HR بيفهم ويحلل وياخد قرار </span>
+              </div>
+            </div>
+
+            <!-- CTA Anchor Button -->
+            <div class="mt-10">
+              <a
+                href="#roadmap"
+                class="inline-flex items-center gap-2 text-white/90 hover:text-white font-bold text-sm md:text-base transition-colors group"
+              >
+                <span>استكشف رحلة الـ 4 مراحل بالتفصيل</span>
+                <i
+                  class="fas fa-chevron-down text-xs transition-transform duration-300 group-hover:translate-y-1"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ==================== 4-PHASES ROADMAP SECTION ==================== -->
+      <section
+        id="roadmap"
+        class="bg-white py-12 md:py-24 px-4 border-y border-slate-200 relative overflow-hidden"
+      >
+        <div class="max-w-5xl mx-auto relative z-10">
+          <h2
+            class="text-2xl md:text-5xl font-extrabold text-center text-gradient mb-12 md:mb-20"
+          >
+            البرنامج عبارة عن رحلة من 4 مراحل رئيسية
+          </h2>
+
+          <div
+            class="timeline-container mt-6 md:mt-8 text-base md:text-lg font-medium"
+          >
+            <!-- Phase 1 -->
+            <article class="timeline-item">
+              <div class="timeline-dot shadow-sm">1</div>
+              <div
+                class="card-3d p-6 md:p-10 border-r-4"
+                style="
+                  --border-color: #e2e8f0;
+                  --border-hover: #3b82f6;
+                  border-right-color: #3b82f6;
+                "
+              >
+                <h3
+                  class="text-xl md:text-3xl font-extrabold text-primary mb-3 flex items-center gap-2 md:gap-3"
+                >
+                  <i
+                    class="fas fa-brain text-secondary bg-blue-50 p-2 md:p-3 rounded-lg"
+                    aria-hidden="true"
+                  ></i>
+                  المرحلة الأولى: HR Data Mindset
+                </h3>
+                <p
+                  class="text-slate-600 mb-4 leading-relaxed bg-slate-50 p-3 md:p-4 rounded-lg border border-slate-100 text-sm md:text-base"
+                >
+                  قبل ما نمسك أي Tool... لازم نغير طريقة تفكيرك.
+                  <br />
+                  لأن المشكلة مش في إنك تعرف تعمل Chart.
+                  <br />
+                  <strong class="font-bold text-slate-800"
+                    >المشكلة إنك تعرف: إيه السؤال الصح اللي تسأله
+                    للـData؟</strong
+                  >
+                </p>
+                <h4
+                  class="font-extrabold text-slate-800 mb-3 md:mb-4 text-base md:text-xl"
+                >
+                  هتتعلم:
+                </h4>
+                <ul
+                  class="grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-700 font-bold mb-4 text-sm md:text-base"
+                >
+                  <li
+                    class="flex items-center gap-2 bg-white border border-slate-100 p-2 rounded-md"
+                  >
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    يعني إيه HR Analytics؟
+                  </li>
+                  <li
+                    class="flex items-center gap-2 bg-white border border-slate-100 p-2 rounded-md"
+                  >
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    الفرق بين Data وInformation وInsight
+                  </li>
+                  <li
+                    class="flex items-center gap-2 bg-white border border-slate-100 p-2 rounded-md"
+                  >
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    إزاي تفكر كـHR Analyst
+                  </li>
+                  <li
+                    class="flex items-center gap-2 bg-white border border-slate-100 p-2 rounded-md"
+                  >
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    تحديد المشكلة وتحويلها لسؤال
+                  </li>
+                  <li
+                    class="flex items-center gap-2 bg-white border border-slate-100 p-2 rounded-md md:col-span-2"
+                  >
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    أهم مؤشرات الـHR اللي لازم تكون فاهمها
+                  </li>
+                </ul>
+                <div
+                  class="bg-gradient-to-r from-blue-50 to-white border border-blue-100 text-primary font-extrabold p-3 rounded-xl text-center text-sm md:text-lg"
+                >
+                  مبروك... بدأت تفكر كـHR Analyst.
+                  <br />
+                  لكن لسه هنبدأ نتعامل مع الـData نفسها.
+                </div>
+              </div>
+            </article>
+
+            <!-- Phase 2 -->
+            <article class="timeline-item">
+              <div
+                class="timeline-dot bg-gradient-to-br from-green-500 to-teal-500 border-white"
+              >
+                2
+              </div>
+              <div
+                class="card-3d p-6 md:p-10 border-r-4"
+                style="
+                  --border-color: #e2e8f0;
+                  --border-hover: #10b981;
+                  border-right-color: #10b981;
+                "
+              >
+                <h3
+                  class="text-xl md:text-3xl font-extrabold text-slate-800 mb-3 flex items-center gap-2 md:gap-3"
+                >
+                  <i
+                    class="fas fa-database text-green-600 bg-green-50 p-2 md:p-3 rounded-lg"
+                    aria-hidden="true"
+                  ></i>
+                  مرحلة: Data Analysis for HR
+                </h3>
+                <p
+                  class="text-slate-600 mb-4 leading-relaxed bg-slate-50 p-3 md:p-4 rounded-lg border border-slate-100 text-sm md:text-base"
+                >
+                  دلوقتي هنبدأ نمسك البيانات ونشتغل عليها بشكل عملي.
+                  <br />
+                  هتتعلم إزاي تتعامل مع بيانات الـHR وتجهزها للتحليل.
+                </p>
+                <h4
+                  class="font-extrabold text-slate-800 mb-3 md:mb-4 text-base md:text-xl"
+                >
+                  هتتعلم:
+                </h4>
+                <ul
+                  class="grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-700 font-bold mb-4 text-sm md:text-base"
+                >
+                  <li
+                    class="flex items-center gap-2 bg-white border border-slate-100 p-2 rounded-md"
+                  >
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    Excel for HR Analytics
+                  </li>
+                  <li
+                    class="flex items-center gap-2 bg-white border border-slate-100 p-2 rounded-md"
+                  >
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    Data Cleaning
+                  </li>
+                  <li
+                    class="flex items-center gap-2 bg-white border border-slate-100 p-2 rounded-md"
+                  >
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    HR Metrics & KPIs
+                  </li>
+                  <li
+                    class="flex items-center gap-2 bg-white border border-slate-100 p-2 rounded-md"
+                  >
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    تحليل الـRecruitment Data
+                  </li>
+                  <li
+                    class="flex items-center gap-2 bg-white border border-slate-100 p-2 rounded-md"
+                  >
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    تحليل الـTurnover & Retention
+                  </li>
+                  <li
+                    class="flex items-center gap-2 bg-white border border-slate-100 p-2 rounded-md"
+                  >
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    تحليل الـPerformance
+                  </li>
+                </ul>
+                <div
+                  class="bg-gradient-to-r from-green-50 to-white border border-green-100 text-green-800 font-extrabold p-3 rounded-xl text-center text-sm md:text-lg"
+                >
+                  مبروك... الأرقام بدأت تتكلم معاك.
+                  <br />
+                  بس لسه إزاي نعرض كل ده للمدير؟
+                </div>
+              </div>
+            </article>
+
+            <!-- Phase 3 -->
+            <article class="timeline-item">
+              <div
+                class="timeline-dot bg-gradient-to-br from-accent to-orange-500 border-white"
+              >
+                3
+              </div>
+              <div
+                class="card-3d p-6 md:p-10 border-r-4"
+                style="
+                  --border-color: #e2e8f0;
+                  --border-hover: #f59e0b;
+                  border-right-color: #f59e0b;
+                "
+              >
+                <h3
+                  class="text-xl md:text-3xl font-extrabold text-slate-800 mb-3 flex items-center gap-2 md:gap-3"
+                >
+                  <i
+                    class="fas fa-chart-pie text-accent bg-orange-50 p-2 md:p-3 rounded-lg"
+                    aria-hidden="true"
+                  ></i>
+                  مرحلة: HR Analytics & Power BI
+                </h3>
+                <p
+                  class="text-slate-600 mb-4 leading-relaxed bg-slate-50 p-3 md:p-4 rounded-lg border border-slate-100 text-sm md:text-base"
+                >
+                  <strong class="font-bold text-slate-800"
+                    >وهنا بقى هنطلع من مرحلة:</strong
+                  >
+                  عندي Excel Sheet.
+                  <br />
+                  <strong class="font-bold text-accent">لمرحلة :</strong>
+                  عندي Dashboard.
+                </p>
+                <h4
+                  class="font-extrabold text-slate-800 mb-3 md:mb-4 text-base md:text-xl"
+                >
+                  هتتعلم:
+                </h4>
+                <ul
+                  class="grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-700 font-bold mb-4 text-sm md:text-base"
+                >
+                  <li
+                    class="flex items-center gap-2 bg-white border border-slate-100 p-2 rounded-md"
+                  >
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    أساسيات Power BI
+                  </li>
+                  <li
+                    class="flex items-center gap-2 bg-white border border-slate-100 p-2 rounded-md"
+                  >
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    Data Visualization
+                  </li>
+                  <li
+                    class="flex items-center gap-2 bg-white border border-slate-100 p-2 rounded-md"
+                  >
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    بناء HR Dashboards
+                  </li>
+                  <li
+                    class="flex items-center gap-2 bg-white border border-slate-100 p-2 rounded-md"
+                  >
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    Interactive Reports
+                  </li>
+                </ul>
+                <div
+                  class="bg-slate-800 text-white p-4 md:p-6 rounded-xl font-semibold mb-4 text-sm md:text-base border border-slate-700"
+                >
+                  <p class="leading-relaxed">
+                    وتبدأ تعمل Dashboards حقيقية. بدل ما تبعت 15 Sheet... تفتح
+                    Dashboard واحدة فيها:
+                    <br />
+                    <span class="text-accent font-bold"
+                      >(Employees - Turnover - Hiring - Performance)</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="bg-gradient-to-r from-orange-50 to-white border border-orange-100 text-orange-800 font-extrabold p-3 rounded-xl text-center text-sm md:text-lg"
+                >
+                  مبروك... دلوقتي بقيت تعرف تحلل وتعرض البيانات.
+                </div>
+              </div>
+            </article>
+
+            <!-- Phase 4 -->
+            <article class="timeline-item mb-0">
+              <div
+                class="timeline-dot bg-gradient-to-br from-purple-500 to-indigo-600 border-white"
+              >
+                4
+              </div>
+              <div
+                class="card-3d p-6 md:p-10 border-r-4"
+                style="
+                  --border-color: #e2e8f0;
+                  --border-hover: #8b5cf6;
+                  border-right-color: #8b5cf6;
+                "
+              >
+                <h3
+                  class="text-xl md:text-3xl font-extrabold text-slate-800 mb-3 flex items-center gap-2 md:gap-3"
+                >
+                  <i
+                    class="fas fa-bullseye text-purple-600 bg-purple-50 p-2 md:p-3 rounded-lg"
+                    aria-hidden="true"
+                  ></i>
+                  مرحلة: From Data to HR Decision
+                </h3>
+                <p
+                  class="text-slate-600 mb-4 leading-relaxed bg-slate-50 p-3 md:p-4 rounded-lg border border-slate-100 text-sm md:text-base"
+                >
+                  لأننا مش عايزين نخرجك من البرنامج وإنت بتعرف تعمل Dashboard
+                  حلوة وبس.
+                  <br />
+                  <strong class="font-bold text-slate-800"
+                    >إحنا عايزينك تعرف: إيه القرار اللي المفروض ناخده بناءً
+                    عليها؟</strong
+                  >
+                </p>
+                <h4
+                  class="font-extrabold text-slate-800 mb-3 md:mb-4 text-base md:text-xl"
+                >
+                  هتتعلم إزاي تستخدم الـAnalytics في:
+                </h4>
+                <ul
+                  class="grid grid-cols-1 md:grid-cols-2 gap-2 text-slate-700 font-bold mb-6 text-sm md:text-base"
+                >
+                  <li
+                    class="flex items-center gap-2 bg-white border border-slate-100 p-2 rounded-md"
+                  >
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    Recruitment Analytics
+                  </li>
+                  <li
+                    class="flex items-center gap-2 bg-white border border-slate-100 p-2 rounded-md"
+                  >
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    Employee Turnover
+                  </li>
+                  <li
+                    class="flex items-center gap-2 bg-white border border-slate-100 p-2 rounded-md"
+                  >
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    Performance Analytics
+                  </li>
+                  <li
+                    class="flex items-center gap-2 bg-white border border-slate-100 p-2 rounded-md"
+                  >
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    Training Analytics
+                  </li>
+                  <li
+                    class="flex items-center gap-2 bg-white border border-slate-100 p-2 rounded-md md:col-span-2"
+                  >
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    تقديم الـInsights لصناع القرار
+                  </li>
+                </ul>
+
+                <div
+                  class="bg-gradient-to-br from-slate-900 to-slate-800 text-white p-5 md:p-8 rounded-xl shadow-lg"
+                >
+                  <p
+                    class="text-base md:text-xl font-medium leading-relaxed mb-3 text-slate-300"
+                  >
+                    يعني مش هتقول:
+                    <span
+                      class="text-white font-bold bg-white/10 px-2 py-1 rounded"
+                      >"الـTurnover 18%." وبس.</span
+                    >
+                  </p>
+                  <p
+                    class="text-xl md:text-2xl font-extrabold text-accent mb-3"
+                  >
+                    هتبدأ تسأل:
+                  </p>
+                  <div class="flex flex-wrap gap-2 mb-4 text-sm md:text-base">
+                    <span
+                      class="bg-white/10 border border-white/20 px-3 py-1 rounded-md font-bold"
+                      >ليه؟</span
+                    >
+                    <span
+                      class="bg-white/10 border border-white/20 px-3 py-1 rounded-md font-bold"
+                      >المشكلة فين؟</span
+                    >
+                    <span
+                      class="bg-white/10 border border-white/20 px-3 py-1 rounded-md font-bold"
+                      >إيه الأسباب؟</span
+                    >
+                    <span
+                      class="bg-white/10 border border-white/20 px-3 py-1 rounded-md font-bold"
+                      >القرار إيه؟</span
+                    >
+                  </div>
+                  <p
+                    class="text-sm md:text-lg font-bold bg-gradient-to-r from-accent to-orange-500 bg-clip-text text-transparent"
+                  >
+                    وده الفرق الحقيقي بين إنك تعرف Data... وإنك تعرف تستخدم
+                    الـData.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Summary Box -->
+          <article
+            class="mt-12 md:mt-20 glass-card p-6 md:p-14 rounded-2xl md:rounded-[2.5rem] shadow-sm border-t-4 md:border-t-8 border-primary text-center"
+          >
+            <h3 class="text-2xl md:text-4xl font-extrabold text-slate-900 mb-4">
+              وفي النهاية...
+            </h3>
+            <p class="text-lg md:text-2xl mb-4 text-slate-600 font-bold">
+              إنت مش هتكون مجرد HR اتعلم Excel وPower BI.
+            </p>
+            <p class="text-xl md:text-2xl font-extrabold text-primary mb-6">
+              إنت هتكون HR فاهم:
+            </p>
+
+            <div
+              class="flex flex-wrap justify-center items-center gap-2 text-slate-700 font-bold text-sm md:text-xl mb-8 dir-ltr"
+            >
+              <span
+                class="bg-white shadow-sm border border-slate-100 px-3 py-1.5 md:px-4 md:py-2 rounded-lg"
+                >إزاي يسأل صح</span
+              >
+              <i
+                class="fas fa-chevron-left text-accent text-sm md:text-2xl"
+              ></i>
+              <span
+                class="bg-white shadow-sm border border-slate-100 px-3 py-1.5 md:px-4 md:py-2 rounded-lg"
+                >يجمع البيانات</span
+              >
+              <i
+                class="fas fa-chevron-left text-accent text-sm md:text-2xl"
+              ></i>
+              <span
+                class="bg-white shadow-sm border border-slate-100 px-3 py-1.5 md:px-4 md:py-2 rounded-lg"
+                >يحللها</span
+              >
+              <i
+                class="fas fa-chevron-left text-accent text-sm md:text-2xl"
+              ></i>
+              <span
+                class="bg-white shadow-sm border border-slate-100 px-3 py-1.5 md:px-4 md:py-2 rounded-lg"
+                >يطلع Insights</span
+              >
+              <i
+                class="fas fa-chevron-left text-accent text-sm md:text-2xl"
+              ></i>
+              <span
+                class="bg-white shadow-sm border border-slate-100 px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-primary"
+                >ياخد قرار.</span
+              >
+            </div>
+
+            <div
+              class="inline-block bg-gradient-to-r from-primary to-blue-800 text-white p-5 md:p-8 rounded-xl md:rounded-2xl shadow-md w-full md:w-auto"
+            >
+              <p class="text-xl md:text-3xl font-extrabold mb-2">
+                يعني ببساطة:
+                <span
+                  class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-yellow-300"
+                  >HR + Data + Business</span
+                >
+              </p>
+              <p class="text-base md:text-xl font-medium text-blue-100 mt-2">
+                ودي هي عقلية الـ
+                <span
+                  class="font-extrabold text-white bg-white/20 px-2 py-1 rounded-md"
+                  >HR Analyst</span
+                >.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ==================== INSTRUCTOR BIO SECTION ==================== -->
+      <section
+        id="instructor"
+        class="py-12 md:py-24 px-4 max-w-5xl mx-auto text-base md:text-lg leading-relaxed md:leading-loose text-slate-700 relative"
+      >
+        <h2
+          class="text-2xl md:text-5xl font-extrabold text-center text-gradient mb-6 md:mb-8 drop-shadow-sm"
+        >
+          طيب مين اللي هيدربك في الكورس... ؟
+        </h2>
+
+        <div class="text-center mb-10 md:mb-16 max-w-3xl mx-auto">
+          <p
+            class="font-extrabold text-base md:text-2xl text-slate-800 mb-3 bg-white/80 inline-block px-4 py-2 md:px-6 md:py-2.5 rounded-full shadow-sm border border-slate-200"
+          >
+            علشان عارفين إنك مش محتاج تتعلم HR Analytics من حد حافظ Tools...
+          </p>
+          <p
+            class="text-slate-600 font-bold text-sm md:text-xl leading-relaxed mt-2 md:mt-4"
+          >
+            إنت محتاج تتعلم من حد فاهم الـHR… وفاهم الـData... واشتغل بيهم فعلًا
+            في بيئة عمل حقيقية في اكتر من industry
+          </p>
+        </div>
+
+        <article
+          class="glass-card p-6 md:p-14 rounded-2xl md:rounded-[2.5rem] shadow-sm border-t-4 md:border-t-8 border-accent relative overflow-hidden"
+        >
+          <div
+            class="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-10 relative z-10"
+          >
+            <!-- Instructor Photo -->
+            <figure
+              class="w-28 h-28 md:w-48 md:h-48 rounded-2xl md:rounded-[2rem] shrink-0 shadow-inner border-2 border-white overflow-hidden bg-slate-100"
+            >
+              <img
+                src="https://eraapro.com/images/hr/11.jpeg"
+                alt="د. هبة السيد - خبيرة People Analytics"
+                class="w-full h-full object-cover"
+              />
+              <figcaption class="sr-only">د. هبة السيد</figcaption>
+            </figure>
+
+            <div class="flex-1 w-full text-center md:text-right">
+              <p
+                class="font-extrabold text-slate-400 mb-1 md:mb-2 text-base md:text-xl"
+              >
+                علشان كده...
+              </p>
+              <h3
+                class="font-extrabold text-2xl md:text-5xl text-primary mb-3 drop-shadow-sm"
+              >
+                الدبلومة هتكون مع د. هبة السيد
+              </h3>
+              <p
+                class="bg-secondary/10 text-secondary inline-block px-3 py-1 md:px-5 md:py-2 rounded-lg md:rounded-xl font-extrabold text-sm md:text-xl mb-4 md:mb-6 border border-secondary/20"
+              >
+                Director of People Analytics في البنك الاهلي المصري
+              </p>
+
+              <p
+                class="mb-6 md:mb-10 font-bold text-slate-700 text-sm md:text-xl leading-relaxed md:leading-loose bg-white/60 p-4 md:p-6 rounded-xl border border-white shadow-sm"
+              >
+                خبيرة في ذكاء الأعمال وتحليل البيانات بخبرة تتجاوز 20 عامًا،
+                ومتخصصة في Microsoft Power BI وتطوير لوحات المعلومات التفاعلية
+                ومؤشرات الأداء. أشغل حاليًا منصب مدير تحليلات الأفراد بإحدى
+                البنوك المصرية الكبيرة، وحاصلة على شهادة Microsoft Certified
+                Data Analyst وماجستير في الإحصاء التطبيقي. أمتلك خبرة متقدمة في
+                نمذجة البيانات وPower Query وDAX، مع تنفيذ مشاريع ناجحة في
+                القطاع المصرفي والرعاية الصحية. كما أقدم برامج تدريبية وورش عمل
+                متخصصة لتحويل البيانات إلى رؤى تدعم اتخاذ القرار.
+              </p>
+
+              <!-- Specializations Grid -->
+              <div
+                class="w-full text-right border-t-2 border-slate-200/60 pt-6 md:pt-10"
+              >
+                <h4
+                  class="font-extrabold text-slate-900 mb-6 text-lg md:text-2xl flex items-center gap-2 md:gap-3"
+                >
+                  <i class="fas fa-star text-accent text-sm md:text-base"></i>
+                  د. هبة مش بس عندها خبرة... لكن متخصصة في:
+                </h4>
+
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-5 mb-8 md:mb-12"
+                  dir="ltr"
+                >
+                  <div
+                    class="card-3d bg-white p-3 md:p-5 rounded-xl md:rounded-2xl flex items-center gap-3 md:gap-5 border-l-4 md:border-l-8 border-secondary"
+                  >
+                    <div
+                      class="w-10 h-10 md:w-14 md:h-14 rounded-lg md:rounded-xl bg-blue-50 text-secondary flex items-center justify-center text-lg md:text-2xl shrink-0 shadow-sm border border-blue-100"
+                    >
+                      <i class="fas fa-users-gear"></i>
+                    </div>
+                    <span
+                      class="font-extrabold text-slate-800 text-base md:text-xl"
+                      >People Analytics</span
+                    >
+                  </div>
+
+                  <div
+                    class="card-3d bg-white p-3 md:p-5 rounded-xl md:rounded-2xl flex items-center gap-3 md:gap-5 border-l-4 md:border-l-8 border-accent"
+                  >
+                    <div
+                      class="w-10 h-10 md:w-14 md:h-14 rounded-lg md:rounded-xl bg-orange-50 text-accent flex items-center justify-center text-lg md:text-2xl shrink-0 shadow-sm border border-orange-100"
+                    >
+                      <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <span
+                      class="font-extrabold text-slate-800 text-base md:text-xl"
+                      >Business Intelligence</span
+                    >
+                  </div>
+
+                  <div
+                    class="card-3d bg-white p-3 md:p-5 rounded-xl md:rounded-2xl flex items-center gap-3 md:gap-5 border-l-4 md:border-l-8 border-yellow-500"
+                  >
+                    <div
+                      class="w-10 h-10 md:w-14 md:h-14 rounded-lg md:rounded-xl bg-yellow-50 text-yellow-600 flex items-center justify-center text-lg md:text-2xl shrink-0 shadow-sm border border-yellow-100"
+                    >
+                      <i class="fas fa-chart-simple"></i>
+                    </div>
+                    <span
+                      class="font-extrabold text-slate-800 text-base md:text-xl"
+                      >Microsoft Power BI</span
+                    >
+                  </div>
+
+                  <div
+                    class="card-3d bg-white p-3 md:p-5 rounded-xl md:rounded-2xl flex items-center gap-3 md:gap-5 border-l-4 md:border-l-8 border-purple-500"
+                  >
+                    <div
+                      class="w-10 h-10 md:w-14 md:h-14 rounded-lg md:rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-lg md:text-2xl shrink-0 shadow-sm border border-purple-100"
+                    >
+                      <i class="fas fa-table-columns"></i>
+                    </div>
+                    <span
+                      class="font-extrabold text-slate-800 text-base md:text-xl"
+                      >Interactive Dashboards</span
+                    >
+                  </div>
+                </div>
+
+                <!-- Certifications -->
+                <h4
+                  class="font-extrabold text-slate-900 mb-6 text-lg md:text-2xl text-right flex items-center gap-2"
+                  dir="rtl"
+                >
+                  <i class="fas fa-medal text-accent text-sm md:text-base"></i>
+                  وحاصلة على:
+                </h4>
+
+                <div
+                  class="grid grid-cols-1 gap-3 md:gap-5 mb-8 md:mb-10"
+                  dir="ltr"
+                >
+                  <div
+                    class="card-3d bg-gradient-to-r from-slate-900 to-slate-800 p-4 md:p-6 rounded-xl md:rounded-2xl flex items-center gap-4 md:gap-6 border border-slate-700 text-white"
+                  >
+                    <div
+                      class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-slate-800 text-accent flex items-center justify-center text-xl md:text-3xl shrink-0 shadow-inner border border-slate-600"
+                    >
+                      <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <span
+                      class="font-extrabold text-base md:text-xl tracking-wide leading-tight"
+                      >Master’s in Applied Statistics</span
+                    >
+                  </div>
+
+                  <div
+                    class="card-3d bg-gradient-to-r from-slate-900 to-slate-800 p-4 md:p-6 rounded-xl md:rounded-2xl flex items-center gap-4 md:gap-6 border border-slate-700 text-white"
+                  >
+                    <div
+                      class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-slate-800 text-secondary flex items-center justify-center text-xl md:text-3xl shrink-0 shadow-inner border border-slate-600"
+                    >
+                      <i class="fas fa-certificate"></i>
+                    </div>
+                    <span
+                      class="font-extrabold text-base md:text-xl tracking-wide leading-tight"
+                      >Microsoft Certified Data Analyst</span
+                    >
+                  </div>
+
+                  <div
+                    class="card-3d bg-gradient-to-r from-slate-900 to-slate-800 p-4 md:p-6 rounded-xl md:rounded-2xl flex items-center gap-4 md:gap-6 border border-slate-700 text-white"
+                  >
+                    <div
+                      class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-slate-800 text-green-400 flex items-center justify-center text-xl md:text-3xl shrink-0 shadow-inner border border-slate-600"
+                    >
+                      <i class="fas fa-award"></i>
+                    </div>
+                    <span
+                      class="font-extrabold text-base md:text-xl tracking-wide leading-tight"
+                      >AIHR Certified – People Analytics</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Takeaway Box -->
+              <div
+                class="bg-gradient-to-br from-blue-50 to-white p-5 md:p-10 rounded-xl md:rounded-3xl border-2 border-blue-100/50 mt-4 md:mt-6 text-right shadow-sm relative overflow-hidden"
+              >
+                <p
+                  class="font-extrabold text-primary text-xl md:text-3xl mb-4 relative z-10"
+                >
+                  يعني خلال الكورس...
+                </p>
+                <p
+                  class="text-slate-700 font-bold text-sm md:text-xl leading-relaxed md:leading-loose mb-4 relative z-10"
+                >
+                  مش هتتعلم ازاي تستخدم Excel وPower BI وبس... هتتعلم ازاي تفكر
+                  بعقلية HR Analyst... وإزاي تربط تحليلات الـHR بأهداف
+                  الـBusiness علشان تدعم القرار.
+                </p>
+                <div
+                  class="bg-white p-4 md:p-6 rounded-lg md:rounded-2xl shadow-sm border-l-4 md:border-l-8 border-secondary relative z-10"
+                >
+                  <p
+                    class="text-secondary font-extrabold text-base md:text-2xl leading-relaxed md:leading-loose"
+                  >
+                    لأن الخبرة الحقيقية مش إنك تعرف تعمل Dashboard...
+                    <br />
+                    <span class="text-primary mt-1 md:mt-2 block"
+                      >الخبرة إنك تعرف الـDashboard بتقولك إيه... وإيه القرار
+                      اللي المفروض يتاخد بناءً عليها.</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ==================== TARGET AUDIENCE SECTION ==================== -->
+      <section
+        id="target-audience"
+        class="bg-slate-900 text-white py-12 md:py-24 px-4 relative overflow-hidden"
+      >
+        <div
+          class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-slate-500 to-transparent"
+        ></div>
+        <div
+          class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-10 text-base md:text-lg"
+        >
+          <!-- Who It Is For -->
+          <article
+            class="card-3d bg-slate-800 p-6 md:p-10 rounded-2xl md:rounded-3xl border border-slate-700 border-t-4 md:border-t-8 border-t-green-500"
+            style="--border-color: #0f172a; --border-hover: #22c55e"
+          >
+            <h3
+              class="text-2xl md:text-3xl font-extrabold text-green-400 mb-6 flex items-center drop-shadow-md"
+            >
+              <i class="fas fa-check-circle ml-3 text-3xl md:text-4xl"></i>
+              الكورس ده لمين؟
+            </h3>
+            <ul
+              class="space-y-4 md:space-y-6 text-slate-300 font-medium leading-relaxed text-sm md:text-base"
+            >
+              <li
+                class="flex items-start bg-slate-700/30 p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-700/50"
+              >
+                <strong
+                  class="text-green-400 font-bold ml-2 text-base md:text-xl block w-16 md:w-20 shrink-0"
+                  >ليك...</strong
+                >
+                <span class="mt-0.5"
+                  >لو إنت HR وعايز تطور نفسك وتخرج من الـTraditional HR.</span
+                >
+              </li>
+              <li
+                class="flex items-start bg-slate-700/30 p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-700/50"
+              >
+                <strong
+                  class="text-green-400 font-bold ml-2 text-base md:text-xl block w-16 md:w-20 shrink-0"
+                  >ليك لو شغال:</strong
+                >
+                <span class="mt-0.5"
+                  >( Recruitment - Personnel - OD - Performance - L&D ) وعايز
+                  تضيف Skill مطلوبة.</span
+                >
+              </li>
+              <li
+                class="flex items-start bg-slate-700/30 p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-700/50"
+              >
+                <strong
+                  class="text-green-400 font-bold ml-2 text-base md:text-xl block w-16 md:w-20 shrink-0"
+                  >لو Manager</strong
+                >
+                <span class="mt-0.5"
+                  >و حابب تجمع كل الـ HR KPIs في مكان واحد وتقيس اداء الشركة
+                  باستمرار.</span
+                >
+              </li>
+              <li
+                class="flex items-start bg-slate-700/30 p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-700/50"
+              >
+                <strong
+                  class="text-green-400 font-bold ml-2 text-base md:text-xl block w-16 md:w-20 shrink-0"
+                  >ليك لو HR</strong
+                >
+                <span class="mt-0.5"
+                  >و بتدور علي ترقية او زيادة في المرتب بمهارة قوية جداً.</span
+                >
+              </li>
+              <li
+                class="flex items-start bg-slate-700/30 p-3 md:p-4 rounded-lg md:rounded-xl border border-slate-700/50"
+              >
+                <strong
+                  class="text-green-400 font-bold ml-2 text-base md:text-xl block w-16 md:w-20 shrink-0"
+                  >ليك...</strong
+                >
+                <span class="mt-0.5"
+                  >لو بتشتغل على Excel كل يوم ومش عارف تستفيد من البيانات بأقصى
+                  شكل.</span
+                >
+              </li>
+            </ul>
+          </article>
+
+          <!-- Who It Is NOT For -->
+          <article
+            class="card-3d bg-slate-800 p-6 md:p-10 rounded-2xl md:rounded-3xl border border-slate-700 border-t-4 md:border-t-8 border-t-red-500"
+            style="--border-color: #0f172a; --border-hover: #ef4444"
+          >
+            <h3
+              class="text-2xl md:text-3xl font-extrabold text-red-400 mb-6 flex items-center drop-shadow-md"
+            >
+              <i class="fas fa-times-circle ml-3 text-3xl md:text-4xl"></i>
+              الكورس ده مش ليك:
+            </h3>
+            <ul
+              class="space-y-4 md:space-y-6 text-slate-300 font-medium leading-relaxed text-sm md:text-base"
+            >
+              <li
+                class="flex items-start bg-red-900/10 p-3 md:p-4 rounded-lg md:rounded-xl border border-red-900/30"
+              >
+                <i
+                  class="fas fa-times text-red-400 mt-1 ml-3 text-lg md:text-xl shrink-0"
+                  aria-hidden="true"
+                ></i>
+                <span
+                  >لو إنت Advanced جدًا في HR Analytics بالفعل، فالبرنامج مش
+                  موجه لمستواك.</span
+                >
+              </li>
+              <li
+                class="flex items-start bg-red-900/10 p-3 md:p-4 rounded-lg md:rounded-xl border border-red-900/30"
+              >
+                <i
+                  class="fas fa-times text-red-400 mt-1 ml-3 text-lg md:text-xl shrink-0"
+                  aria-hidden="true"
+                ></i>
+                <span
+                  >لو داخل عشان تتعلم Tool وخلاص من غير ما تطبق، مش هتستفيد
+                  بالشكل اللي إحنا عايزينه.</span
+                >
+              </li>
+              <li
+                class="flex items-start bg-red-900/10 p-3 md:p-4 rounded-lg md:rounded-xl border border-red-900/30"
+              >
+                <i
+                  class="fas fa-times text-red-400 mt-1 ml-3 text-lg md:text-xl shrink-0"
+                  aria-hidden="true"
+                ></i>
+                <span
+                  >ولو فاكر إن مجرد إنك تتعلم Power BI هيخليك HR Analyst... فأنت
+                  محتاج تفهم إن الموضوع أكبر من Tool.</span
+                >
+              </li>
+              <li
+                class="flex items-start bg-red-900/10 p-3 md:p-4 rounded-lg md:rounded-xl border border-red-900/30"
+              >
+                <i
+                  class="fas fa-times text-red-400 mt-1 ml-3 text-lg md:text-xl shrink-0"
+                  aria-hidden="true"
+                ></i>
+                <span
+                  >لو انت لسه معندكش اي خبره في مجال الـHR يبقي هنستناك في روند
+                  جاية لأنك محتاج اساسيات.</span
+                >
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ==================== VALUE, INVESTMENT & GUARANTEE SECTION ==================== -->
+      <section
+        id="pricing-guarantee"
+        class="py-12 md:py-20 px-4 max-w-5xl mx-auto"
+      >
+        <div class="text-center mb-10 md:mb-12">
+          <h2
+            class="text-2xl md:text-4xl font-extrabold text-primary mb-4 md:mb-6"
+          >
+            تفتكر قيمة الرحلة دي كام؟
+          </h2>
+          <div
+            class="text-base md:text-xl text-slate-700 leading-relaxed md:leading-loose space-y-2 font-semibold"
+          >
+            <p>إنت مش بتدفع مقابل كام Session.</p>
+            <p>إنت بتستثمر في Skill جديدة ممكن تغير طريقة شغلك بالكامل.</p>
+            <p>
+              Skill تخليك: تفهم الـData و تتكلم بالأرقام و تعمل Dashboards و
+              تطلع Insights. وتشارك في قرارات الـHR بشكل أقوى.
+            </p>
+            <p
+              class="text-xl md:text-2xl font-extrabold text-slate-900 mt-4 md:mt-6"
+            >
+              وده بالضبط اللى بنحاول نبنيه معاك في HR Analyst.
+            </p>
+          </div>
+
+          <!-- Price Badge -->
+          <div
+            class="bg-primary text-white p-6 md:p-8 rounded-2xl shadow-xl inline-block mt-6 md:mt-8 mb-10 md:mb-16 w-full md:w-auto"
+          >
+            <p class="text-lg md:text-2xl font-bold mb-2">
+              تكلفة الاستثمار ده كله بـ
+            </p>
+            <p class="text-4xl md:text-5xl font-extrabold text-accent">
+              10000 جنيه بس ..
+            </p>
+          </div>
+        </div>
+
+        <!-- Bonuses & Templates -->
+        <article
+          class="bg-white rounded-2xl md:rounded-3xl shadow-sm md:shadow-[0_15px_50px_rgba(0,0,0,0.08)] border border-slate-100 overflow-hidden relative"
+        >
+          <div
+            class="absolute top-0 left-0 w-full h-1.5 md:h-2 bg-gradient-to-r from-secondary to-accent"
+          ></div>
+
+          <header class="p-6 md:p-12 text-center border-b border-slate-100">
+            <h3 class="text-xl md:text-3xl font-extrabold text-slate-900">
+              طيب مفيش ضمان و ايه شكل الدعم اللي بتقدم ؟؟
+            </h3>
+          </header>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x md:divide-x-reverse divide-slate-100"
+          >
+            <!-- Bonus 1 -->
+            <div class="p-6 md:p-10 hover:bg-slate-50 transition-colors">
+              <div
+                class="w-12 h-12 md:w-16 md:h-16 bg-blue-100 text-secondary rounded-full flex items-center justify-center text-2xl md:text-3xl mb-4 md:mb-6 mx-auto"
+              >
+                <i class="fas fa-layer-group"></i>
+              </div>
+              <h4
+                class="text-xl md:text-2xl font-bold text-center text-primary mb-3 md:mb-4"
+              >
+                Templates Library جاهزة
+              </h4>
+              <p
+                class="text-sm md:text-lg text-slate-600 font-semibold leading-relaxed text-center mb-3"
+              >
+                بعد الدبلومة هيكون معاك HR Dashboard Templates Library جاهزة،
+                تشمل أهم الـHR KPIs & Metrics اللي هتحتاجها في شغلك.
+              </p>
+              <p
+                class="text-sm md:text-lg text-slate-800 font-bold leading-relaxed text-center mt-3 md:mt-4 bg-blue-50 p-3 rounded-lg"
+              >
+                يعني تقدر تظهر نتائج شغلك بشكل أسرع، وتبدأ تقدم للـManagement
+                تقارير وDashboards احترافية من أول يوم.
+              </p>
+            </div>
+
+            <!-- Bonus 2 -->
+            <div class="p-6 md:p-10 hover:bg-slate-50 transition-colors">
+              <div
+                class="w-12 h-12 md:w-16 md:h-16 bg-orange-100 text-accent rounded-full flex items-center justify-center text-2xl md:text-3xl mb-4 md:mb-6 mx-auto"
+              >
+                <i class="fas fa-comments"></i>
+              </div>
+              <h4
+                class="text-xl md:text-2xl font-bold text-center text-primary mb-3 md:mb-4"
+              >
+                🎁 استشارة مجانية
+              </h4>
+              <p
+                class="text-sm md:text-lg text-slate-600 font-semibold leading-relaxed text-center mb-3"
+              >
+                هيكون معاك استشارة مجانية بعد الكورس لو واجهتك أي مشكلة في تحليل
+                بيانات أو بناء Dashboard خاصة بشركتك.
+              </p>
+              <p
+                class="text-sm md:text-lg text-slate-800 font-bold leading-relaxed text-center mt-3 md:mt-4 bg-orange-50 p-3 rounded-lg"
+              >
+                علشان هدفنا إنك تقدر تطبقها على شغلك الحقيقي وتحل مشاكل الـHR في
+                شركتك مش مجرد معلومات.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Golden Guarantee Box -->
+        <article
+          class="mt-8 md:mt-12 card-3d p-8 md:p-12 border-t-8 relative overflow-hidden bg-slate-900 shadow-xl"
+          style="
+            --border-color: #0f172a;
+            --border-hover: #f59e0b;
+            border-top-color: #f59e0b;
+          "
+        >
+          <div
+            class="absolute -right-20 -top-20 w-64 h-64 bg-accent/20 rounded-full blur-3xl z-0 pointer-events-none"
+          ></div>
+          <div
+            class="absolute -left-20 -bottom-20 w-64 h-64 bg-secondary/20 rounded-full blur-3xl z-0 pointer-events-none"
+          ></div>
+
+          <div class="relative z-10 text-center">
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-yellow-300 to-accent text-slate-900 rounded-full flex items-center justify-center text-4xl mb-6 mx-auto shadow-[0_0_30px_rgba(245,158,11,0.4)] border-4 border-slate-800"
+            >
+              <i class="fas fa-shield-alt"></i>
+            </div>
+
+            <h3
+              class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-accent mb-4 drop-shadow-sm"
+            >
+              الضمان الذهبي الاستثنائي 100%
+            </h3>
+
+            <p
+              class="text-xl md:text-2xl text-white font-bold leading-loose mb-6"
+            >
+              تقدر تجرب الكورس براحتك.. ولو حسيت إنك مستفدتش منه؟
+            </p>
+
+            <div
+              class="bg-white/10 p-5 md:p-6 rounded-2xl border border-white/20 shadow-inner inline-block transform hover:scale-105 transition-transform duration-300"
+            >
+              <p
+                class="text-2xl md:text-3xl font-extrabold text-white leading-relaxed"
+              >
+                استرد فلوسك كاملة في
+                <span class="text-yellow-300">أول أسبوع</span>
+                <br />
+                <span
+                  class="text-accent underline decoration-wavy decoration-accent underline-offset-8 mt-4 inline-block"
+                  >من غير إبداء أي أسباب!</span
+                >
+              </p>
+            </div>
+            <p class="text-slate-400 mt-8 font-semibold text-sm md:text-lg">
+              الريسك علينا إحنا 100%.. قرارك دلوقتي بدون أي مخاطرة.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-- ==================== CURRICULUM CHECKLIST SECTION ==================== -->
+      <section id="features" class="py-12 md:py-16 px-4 max-w-4xl mx-auto">
+        <div
+          class="bg-blue-50 p-6 md:p-10 rounded-2xl md:rounded-3xl border-2 border-secondary"
+        >
+          <h2
+            class="text-xl md:text-3xl font-extrabold text-primary text-center mb-3 md:mb-4"
+          >
+            عايز تبدأ رحلة الـHR Analyst دلوقتي؟
+          </h2>
+          <p
+            class="text-center text-sm md:text-xl text-slate-700 font-bold mb-6 md:mb-8"
+          >
+            قبل ما تاخد قرارك، خليني أفكرك إنت هتاخد إيه:
+          </p>
+
+          <ul
+            class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 text-sm md:text-lg font-bold text-slate-800"
+          >
+            <li class="flex items-center">
+              <i
+                class="fas fa-check-circle text-green-500 ml-2 md:ml-3 text-base md:text-xl shrink-0"
+              ></i
+              >HR Analytics Mindset
+            </li>
+            <li class="flex items-center">
+              <i
+                class="fas fa-check-circle text-green-500 ml-2 md:ml-3 text-base md:text-xl shrink-0"
+              ></i
+              >Excel for HR Analytics
+            </li>
+            <li class="flex items-center">
+              <i
+                class="fas fa-check-circle text-green-500 ml-2 md:ml-3 text-base md:text-xl shrink-0"
+              ></i
+              >HR Metrics & KPIs
+            </li>
+            <li class="flex items-center">
+              <i
+                class="fas fa-check-circle text-green-500 ml-2 md:ml-3 text-base md:text-xl shrink-0"
+              ></i
+              >Data Analysis
+            </li>
+            <li class="flex items-center">
+              <i
+                class="fas fa-check-circle text-green-500 ml-2 md:ml-3 text-base md:text-xl shrink-0"
+              ></i
+              >Power BI
+            </li>
+            <li class="flex items-center">
+              <i
+                class="fas fa-check-circle text-green-500 ml-2 md:ml-3 text-base md:text-xl shrink-0"
+              ></i
+              >HR Dashboards
+            </li>
+            <li class="flex items-center">
+              <i
+                class="fas fa-check-circle text-green-500 ml-2 md:ml-3 text-base md:text-xl shrink-0"
+              ></i
+              >People Analytics
+            </li>
+            <li class="flex items-center">
+              <i
+                class="fas fa-check-circle text-green-500 ml-2 md:ml-3 text-base md:text-xl shrink-0"
+              ></i
+              >Recruitment Analytics
+            </li>
+            <li class="flex items-center">
+              <i
+                class="fas fa-check-circle text-green-500 ml-2 md:ml-3 text-base md:text-xl shrink-0"
+              ></i
+              >Turnover & Retention Analytics
+            </li>
+            <li class="flex items-center">
+              <i
+                class="fas fa-check-circle text-green-500 ml-2 md:ml-3 text-base md:text-xl shrink-0"
+              ></i
+              >Performance Analytics
+            </li>
+            <li class="flex items-center">
+              <i
+                class="fas fa-check-circle text-green-500 ml-2 md:ml-3 text-base md:text-xl shrink-0"
+              ></i
+              >Training Analytics
+            </li>
+            <li class="flex items-center">
+              <i
+                class="fas fa-check-circle text-green-500 ml-2 md:ml-3 text-base md:text-xl shrink-0"
+              ></i
+              >Practical Projects
+            </li>
+            <li
+              class="flex items-center md:col-span-2 bg-white p-3 rounded-lg shadow-sm"
+            >
+              <i
+                class="fas fa-star text-accent ml-2 md:ml-3 text-base md:text-xl shrink-0"
+              ></i
+              >تطبيق عملي على مشاكل HR حقيقية
+            </li>
+          </ul>
+
+          <div class="mt-8 md:mt-10 text-center">
+            <p class="text-sm md:text-xl mb-4 font-semibold text-slate-700">
+              كل دا علي ايد خبير في مجال الـ HR و الـ Data Analysis هينقلك خبرة
+              20 سنة في 30 ساعة تدريبية بس.
+            </p>
+            <p
+              class="text-lg md:text-2xl font-extrabold text-primary bg-white p-4 rounded-xl shadow-sm inline-block w-full md:w-auto"
+            >
+              و كل ده بهدف واحد: إنك ماتفضلش HR بيشوف الأرقام...
+              <br />
+              <span class="text-accent"
+                >لكن تبقى HR بيفهم الأرقام وبيستخدمها.</span
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== FAQ SECTION ==================== -->
+      <section
+        id="faq"
+        class="py-12 md:py-16 px-4 bg-white border-t border-slate-200"
+      >
+        <div class="max-w-3xl mx-auto">
+          <h2
+            class="text-2xl md:text-4xl font-extrabold text-center text-primary mb-8 md:mb-10"
+          >
+            الأسئلة الشائعة
+          </h2>
+
+          <div class="space-y-3 md:space-y-4">
+            <!-- FAQ 1 -->
+            <div
+              class="border border-slate-200 rounded-lg overflow-hidden shadow-sm"
+            >
+              <button
+                type="button"
+                class="faq-btn w-full text-right p-4 md:p-5 font-bold text-base md:text-lg text-slate-800 bg-slate-50 flex justify-between items-center hover:bg-slate-100 transition-colors"
+              >
+                <span>طب هل محتاج تكون جامد في الـData؟</span>
+                <i
+                  class="fas fa-chevron-down text-secondary transition-transform duration-300"
+                ></i>
+              </button>
+              <div
+                class="faq-content hidden p-4 md:p-5 text-slate-700 font-semibold text-sm md:text-base leading-relaxed bg-white border-t border-slate-100"
+              >
+                لأ. البرنامج معمول عشان يبدأ معاك خطوة بخطوة. مش مطلوب تكون Data
+                Analyst. ومش مطلوب تكون مبرمج. ومش مطلوب تكون خريج Computer
+                Science. المهم إنك تكون HR و مهتم بمجال الـHR، وعندك رغبة حقيقية
+                إنك تطور نفسك وتتعلم تستخدم البيانات في شغلك.
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div
+              class="border border-slate-200 rounded-lg overflow-hidden shadow-sm"
+            >
+              <button
+                type="button"
+                class="faq-btn w-full text-right p-4 md:p-5 font-bold text-base md:text-lg text-slate-800 bg-slate-50 flex justify-between items-center hover:bg-slate-100 transition-colors"
+              >
+                <span>"بس أنا مش شاطر في Excel!"</span>
+                <i
+                  class="fas fa-chevron-down text-secondary transition-transform duration-300"
+                ></i>
+              </button>
+              <div
+                class="faq-content hidden p-4 md:p-5 text-slate-700 font-semibold text-sm md:text-base leading-relaxed bg-white border-t border-slate-100"
+              >
+                وده تحديدًا سبب يخليك تبدأ. إحنا مش بنقولك: تعالى وإنت محترف.
+                إحنا بنقولك: تعالى وإحنا نمشي معاك خطوة بخطوة.
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div
+              class="border border-slate-200 rounded-lg overflow-hidden shadow-sm"
+            >
+              <button
+                type="button"
+                class="faq-btn w-full text-right p-4 md:p-5 font-bold text-base md:text-lg text-slate-800 bg-slate-50 flex justify-between items-center hover:bg-slate-100 transition-colors"
+              >
+                <span>"طب Power BI مش صعب؟"</span>
+                <i
+                  class="fas fa-chevron-down text-secondary transition-transform duration-300"
+                ></i>
+              </button>
+              <div
+                class="faq-content hidden p-4 md:p-5 text-slate-700 font-semibold text-sm md:text-base leading-relaxed bg-white border-t border-slate-100"
+              >
+                أي Tool جديدة في الأول شكلها بيخوف. لكن المشكلة مش في Power BI
+                نفسه. المشكلة لما تتعلمه من غير Context. إنما لما تتعلم: Power
+                BI + HR Data + HR Problems هتفهم أنت بتعمل إيه وليه بتعمله.
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div
+              class="border border-slate-200 rounded-lg overflow-hidden shadow-sm"
+            >
+              <button
+                type="button"
+                class="faq-btn w-full text-right p-4 md:p-5 font-bold text-base md:text-lg text-slate-800 bg-slate-50 flex justify-between items-center hover:bg-slate-100 transition-colors"
+              >
+                <span>"أنا HR ومش فاهم في Statistics!"</span>
+                <i
+                  class="fas fa-chevron-down text-secondary transition-transform duration-300"
+                ></i>
+              </button>
+              <div
+                class="faq-content hidden p-4 md:p-5 text-slate-700 font-semibold text-sm md:text-base leading-relaxed bg-white border-t border-slate-100"
+              >
+                مش مطلوب منك تكون عالم إحصاء. المطلوب إنك تفهم البيانات وتعرف
+                تستخدم التحليل المناسب للمشكلة. إحنا مش بنجهزك تكون
+                Statistician. إحنا بنجهزك تكون HR يعرف يستخدم الـAnalytics.
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div
+              class="border border-slate-200 rounded-lg overflow-hidden shadow-sm"
+            >
+              <button
+                type="button"
+                class="faq-btn w-full text-right p-4 md:p-5 font-bold text-base md:text-lg text-slate-800 bg-slate-50 flex justify-between items-center hover:bg-slate-100 transition-colors"
+              >
+                <span>"طب هل HR Analytics فعلًا هيفرق معايا؟"</span>
+                <i
+                  class="fas fa-chevron-down text-secondary transition-transform duration-300"
+                ></i>
+              </button>
+              <div
+                class="faq-content hidden p-4 md:p-5 text-slate-700 font-semibold text-sm md:text-base leading-relaxed bg-white border-t border-slate-100"
+              >
+                تخيل إن عندك شركتين. في الأولى الـHR بيقول: "حاسس إن الموظفين مش
+                مبسوطين." وفي التانية الـHR بيقول: "الـData بتوضح إن معدل
+                الـTurnover زاد بنسبة X، وأعلى معدل موجود في Department معين،
+                وأغلب حالات الخروج مرتبطة بعوامل محددة... ودي توصياتي." تفتكر
+                الإدارة هتسمع لمين أكتر؟ ده الفرق.
+                <br /><br />
+                والأهم... إحنا مش بنحاول نحولك لـData Analyst ونخليك تنسى الـHR.
+                العكس. إحنا عايزينك تستخدم فهمك للـHR وتضيف له قوة الـData. لأنك
+                أصلًا فاهم الـPeople.
+              </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div
+              class="border border-slate-200 rounded-lg overflow-hidden shadow-sm"
+            >
+              <button
+                type="button"
+                class="faq-btn w-full text-right p-4 md:p-5 font-bold text-base md:text-lg text-slate-800 bg-slate-50 flex justify-between items-center hover:bg-slate-100 transition-colors"
+              >
+                <span>أنا شغال HR بالفعل... هل الكورس هيفيدني؟</span>
+                <i
+                  class="fas fa-chevron-down text-secondary transition-transform duration-300"
+                ></i>
+              </button>
+              <div
+                class="faq-content hidden p-4 md:p-5 text-slate-700 font-semibold text-sm md:text-base leading-relaxed bg-white border-t border-slate-100"
+              >
+                وده من أهم الناس اللي البرنامج معمول عشانهم. لأنك عندك بالفعل
+                فهم للـHR، وإضافة الـAnalytics هتخليك تستخدم البيانات بشكل أقوى
+                في شغلك.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== REGISTRATION & PAYMENT SECTION ==================== -->
+      <section
+        id="registration-form"
+        class="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16 md:py-24 px-4 text-center border-t border-slate-700 relative overflow-hidden"
+      >
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[600px] bg-secondary/5 rounded-full blur-[80px] z-0 pointer-events-none"
+        ></div>
+
+        <div class="max-w-4xl mx-auto mb-10 md:mb-14 relative z-10">
+          <h2 class="text-3xl md:text-5xl font-extrabold mb-4 md:mb-6">
+            من الآخر...
+          </h2>
+          <p
+            class="text-lg md:text-2xl mb-4 font-bold text-slate-300 leading-relaxed md:leading-loose"
+          >
+            الشركات مش محتاجة HR يعرف يجمع أرقام وخلاص. الشركات محتاجة HR يعرف
+            يقول:
+          </p>
+          <p
+            class="text-2xl md:text-4xl font-extrabold text-accent mb-6 md:mb-8"
+          >
+            "الأرقام بتقول إيه؟" و "نعمل إيه بناءً عليها؟"
+          </p>
+          <p class="text-xl md:text-3xl mb-8 md:mb-10 font-bold">
+            وده اللي بنسميه:
+            <span
+              class="bg-white text-primary px-3 py-1 md:px-4 md:py-2 rounded-xl border-2 border-primary mx-1 md:mx-2 inline-block"
+              >HR Analytics</span
+            >
+          </p>
+          <p
+            class="text-base md:text-2xl text-red-400 font-extrabold bg-red-400/10 inline-block px-4 py-2 md:px-6 md:py-3 rounded-full border border-red-400/20"
+          >
+            ابدأ دلوقتي... لأن بعد سنة ممكن تبص على الفرصة دي وتقول: "يا ريتني
+            كنت بدأت من سنة."
+          </p>
+        </div>
+
+        <!-- Registration Form Card -->
+        <div
+          class="max-w-xl mx-auto glass-card p-6 md:p-12 rounded-2xl md:rounded-[2.5rem] shadow-xl border-2 border-white/20 text-slate-900 text-right relative z-10"
+        >
+          <div
+            class="absolute top-0 left-0 w-full h-2 md:h-3 bg-gradient-to-r from-secondary via-blue-400 to-accent"
+          ></div>
+
+          <div class="text-center mb-6 md:mb-8">
+            <div
+              class="w-16 h-16 md:w-20 md:h-20 bg-blue-50 text-primary rounded-full flex items-center justify-center text-2xl md:text-3xl mx-auto mb-3 md:mb-4 shadow-inner border border-blue-100"
+            >
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3
+              class="text-2xl md:text-4xl font-extrabold text-primary mb-2 md:mb-3"
+            >
+              ابدأ رحلة HR Analyst
+            </h3>
+            <p class="text-slate-500 font-bold text-sm md:text-lg">
+              مش عشان تضيف Certificate للـCV... لكن عشان تضيف Skill حقيقية
+              لشغلك.
+            </p>
+          </div>
+
+          <form id="payment-form" class="space-y-4 md:space-y-6">
+            <div>
+              <label
+                for="fullName"
+                class="block text-slate-800 font-extrabold mb-1 md:mb-2 text-sm md:text-lg"
+                >الاسم بالكامل</label
+              >
+              <div class="relative">
+                <i
+                  class="fas fa-user absolute right-3 md:right-4 top-1/2 -translate-y-1/2 text-slate-400"
+                  aria-hidden="true"
+                ></i>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="اكتب اسمك هنا"
+                  required
+                  class="w-full pr-10 pl-3 py-3 md:pr-12 md:pl-4 md:py-4 rounded-lg md:rounded-xl border-2 border-slate-200 focus:outline-none focus:ring-4 focus:ring-secondary/20 focus:border-secondary transition-all bg-slate-50 font-semibold text-base md:text-lg"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label
+                for="email"
+                class="block text-slate-800 font-extrabold mb-1 md:mb-2 text-sm md:text-lg"
+                >البريد الإلكتروني</label
+              >
+              <div class="relative">
+                <i
+                  class="fas fa-envelope absolute left-3 md:left-4 top-1/2 -translate-y-1/2 text-slate-400"
+                  aria-hidden="true"
+                ></i>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@email.com"
+                  required
+                  dir="ltr"
+                  class="w-full pl-10 pr-3 py-3 md:pl-12 md:pr-4 md:py-4 rounded-lg md:rounded-xl border-2 border-slate-200 focus:outline-none focus:ring-4 focus:ring-secondary/20 focus:border-secondary transition-all bg-slate-50 font-semibold text-base md:text-lg text-left"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label
+                for="phone"
+                class="block text-slate-800 font-extrabold mb-1 md:mb-2 text-sm md:text-lg"
+                >رقم الهاتف (واتساب)</label
+              >
+              <div class="relative">
+                <i
+                  class="fab fa-whatsapp absolute left-3 md:left-4 top-1/2 -translate-y-1/2 text-green-500 text-lg md:text-xl"
+                  aria-hidden="true"
+                ></i>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="01xxxxxxxxx"
+                  required
+                  dir="ltr"
+                  class="w-full pl-10 pr-3 py-3 md:pl-12 md:pr-4 md:py-4 rounded-lg md:rounded-xl border-2 border-slate-200 focus:outline-none focus:ring-4 focus:ring-secondary/20 focus:border-secondary transition-all bg-slate-50 font-semibold text-base md:text-lg text-left"
+                />
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              id="submit-btn"
+              class="btn-3d w-full bg-gradient-to-r from-accent to-orange-600 text-white font-black py-4 md:py-5 px-4 md:px-6 rounded-xl text-lg md:text-2xl mt-4 md:mt-6 flex justify-center items-center gap-2 md:gap-3 border border-orange-400/50 relative overflow-hidden group"
+            >
+              <span
+                class="absolute inset-0 w-full h-full bg-white/20 transform -skew-x-12 -translate-x-full group-hover:animate-[shine_1.5s_ease-in-out_infinite]"
+              ></span>
+              <span class="relative z-10">إتمام الدفع (10,000 جنيه)</span>
+              <i class="fas fa-lock relative z-10" aria-hidden="true"></i>
+            </button>
+
+            <div
+              class="flex items-center justify-center gap-2 mt-3 md:mt-4 text-slate-500 font-bold bg-slate-50 py-2 rounded-lg border border-slate-100 text-sm md:text-base"
+            >
+              <i
+                class="fas fa-shield-alt text-green-500"
+                aria-hidden="true"
+              ></i>
+              <span>الدفع آمن ومحمي 100%</span>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== SEMANTIC FOOTER ==================== -->
+    <footer
+      class="bg-slate-950 text-slate-400 py-10 px-4 border-t border-slate-800 text-center text-sm md:text-base"
+    >
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <div class="flex items-center gap-2">
+          <img
+            src="images/logo.webp"
+            alt="EraaPro"
+            class="h-7 w-auto object-contain bg-white/95 rounded-full px-2 py-1"
+          />
+          <span class="text-white font-bold"
+            >EraaPro - Build Your Pro Career</span
+          >
+        </div>
+        <p>
+          © 2026 جميع الحقوق محفوظة لـ EraaPro. برنامج محلل الموارد البشرية.
+        </p>
+        <div class="flex items-center gap-4 text-lg text-slate-400">
+          <a
+            href="https://wa.me/201091897012"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-green-400 transition-colors"
+            title="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a
+            href="https://eraapro.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-blue-400 transition-colors"
+            title="Website"
+          >
+            <i class="fas fa-globe"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==================== FLOATING WHATSAPP BUTTON ==================== -->
+    <aside aria-label="تواصل مباشر">
+      <a
+        href="https://wa.me/201091897012?text=مهتم احجز في برنامج HR Analaytics مع د هبة السيد"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[100] bg-[#25D366] text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-3xl md:text-4xl shadow-lg shadow-[#25D366]/40 hover:bg-[#128C7E] hover:scale-110 transition-all duration-300 group"
+        aria-label="تواصل معنا عبر واتساب"
+      >
+        <!-- WhatsApp Icon -->
+        <i class="fab fa-whatsapp relative z-10" aria-hidden="true"></i>
+
+        <!-- Ping Animation Ring -->
+        <span
+          class="absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-30 animate-ping"
+        ></span>
+
+        <!-- Tooltip -->
+        <span
+          class="absolute right-[115%] top-1/2 -translate-y-1/2 bg-white text-slate-800 text-sm md:text-base font-bold py-2 px-4 rounded-xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none w-max border border-slate-100"
+        >
+          تواصل معنا للاستفسار
+          <span
+            class="absolute top-1/2 -right-2 -translate-y-1/2 border-y-[8px] border-y-transparent border-l-[8px] border-l-white"
+          ></span>
+        </span>
+      </a>
+    </aside>
+
+    <!-- Main JavaScript File -->
+    <script src="./script.js"></script>
+  </body>
+</html>
