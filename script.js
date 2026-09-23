@@ -1,18 +1,25 @@
 // EraaPro HR Analyst Page Scripts
 document.addEventListener('DOMContentLoaded', () => {
-  // FAQ Accordion Interaction
+  // FAQ Accordion Interaction — smooth slide animation
   const faqButtons = document.querySelectorAll('.faq-btn');
 
   faqButtons.forEach((btn) => {
     btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
       const content = btn.nextElementSibling;
-      const icon = btn.querySelector('i');
+      const isOpen = item && item.classList.contains('faq-open');
 
-      if (content) {
-        content.classList.toggle('hidden');
-      }
-      if (icon) {
-        icon.classList.toggle('rotate-180');
+      // Close all open items first
+      document.querySelectorAll('.faq-item.faq-open').forEach((openItem) => {
+        openItem.classList.remove('faq-open');
+        const openContent = openItem.querySelector('.faq-content');
+        if (openContent) openContent.style.maxHeight = '0';
+      });
+
+      // Open clicked item if it was closed
+      if (!isOpen && item && content) {
+        item.classList.add('faq-open');
+        content.style.maxHeight = content.scrollHeight + 'px';
       }
     });
   });

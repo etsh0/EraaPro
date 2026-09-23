@@ -1780,171 +1780,222 @@
       </section>
 
       <!-- ==================== VALUE, INVESTMENT & GUARANTEE SECTION ==================== -->
-      <section
-        id="pricing-guarantee"
-        class="py-12 md:py-20 px-4 max-w-5xl mx-auto"
-      >
-        <div class="text-center mb-10 md:mb-12">
-          <h2
-            class="text-2xl md:text-4xl font-extrabold text-primary mb-4 md:mb-6"
-          >
-            تفتكر قيمة الرحلة دي كام؟
-          </h2>
-          <div
-            class="text-base md:text-xl text-slate-700 leading-relaxed md:leading-loose space-y-2 font-semibold"
-          >
-            <p>إنت مش بتدفع مقابل كام Session.</p>
-            <p>إنت بتستثمر في Skill جديدة ممكن تغير طريقة شغلك بالكامل.</p>
-            <p>
-              Skill تخليك: تفهم الـData و تتكلم بالأرقام و تعمل Dashboards و
-              تطلع Insights. وتشارك في قرارات الـHR بشكل أقوى.
-            </p>
-            <p
-              class="text-xl md:text-2xl font-extrabold text-slate-900 mt-4 md:mt-6"
+      <section id="pricing-guarantee" class="py-16 md:py-24 px-4 bg-[#f8fafc]">
+        <div class="max-w-5xl mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-12 md:mb-16">
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 leading-tight"
             >
-              وده بالضبط اللى بنحاول نبنيه معاك في HR Analyst.
+              تفتكر قيمة الرحلة دي <span class="text-primary">كام؟</span>
+            </h2>
+            <p
+              class="text-slate-500 text-base md:text-lg font-medium max-w-2xl mx-auto leading-relaxed"
+            >
+              إنت مش بتدفع مقابل كام Session — إنت بتستثمر في Skill جديدة ممكن
+              تغير طريقة شغلك بالكامل.
             </p>
           </div>
 
-          <!-- Price Badge -->
+          <!-- Value Pills Row -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12">
+            <div
+              class="flex items-center gap-3 bg-white rounded-2xl border border-slate-100 shadow-sm px-5 py-4"
+            >
+              <div
+                class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center shrink-0"
+              >
+                <i class="fas fa-brain text-primary text-base"></i>
+              </div>
+              <span class="text-slate-800 font-bold text-sm md:text-base"
+                >تفهم الـData وتتكلم بالأرقام</span
+              >
+            </div>
+            <div
+              class="flex items-center gap-3 bg-white rounded-2xl border border-slate-100 shadow-sm px-5 py-4"
+            >
+              <div
+                class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center shrink-0"
+              >
+                <i class="fas fa-chart-bar text-emerald-600 text-base"></i>
+              </div>
+              <span class="text-slate-800 font-bold text-sm md:text-base"
+                >تعمل Dashboards وتطلع Insights</span
+              >
+            </div>
+            <div
+              class="flex items-center gap-3 bg-white rounded-2xl border border-slate-100 shadow-sm px-5 py-4"
+            >
+              <div
+                class="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center shrink-0"
+              >
+                <i class="fas fa-handshake text-amber-600 text-base"></i>
+              </div>
+              <span class="text-slate-800 font-bold text-sm md:text-base"
+                >تشارك في قرارات الـHR بشكل أقوى</span
+              >
+            </div>
+          </div>
+
+          <!-- Price Card -->
+          <div class="relative rounded-2xl overflow-hidden mb-10 md:mb-12">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-primary to-blue-700"
+            ></div>
+            <div
+              class="absolute inset-0 opacity-10"
+              style="
+                background-image: radial-gradient(
+                  circle at 20% 50%,
+                  #fff 1px,
+                  transparent 1px
+                );
+                background-size: 24px 24px;
+              "
+            ></div>
+            <div
+              class="relative z-10 px-8 py-10 md:py-12 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-right"
+            >
+              <div>
+                <p class="text-blue-200 text-sm font-semibold mb-1">
+                  تكلفة الاستثمار الكاملة
+                </p>
+                <h3
+                  class="text-white text-2xl md:text-3xl font-extrabold leading-tight"
+                >
+                  وده بالضبط اللى بنبنيه معاك في<br class="hidden md:block" />
+                  <span class="text-blue-200">HR Analyst</span>
+                </h3>
+              </div>
+              <div
+                class="shrink-0 bg-white/10 border border-white/20 rounded-2xl px-8 py-5 text-center backdrop-blur-sm"
+              >
+                <p class="text-blue-200 text-xs font-bold mb-1">السعر الآن</p>
+                <p
+                  class="text-white text-5xl md:text-6xl font-black leading-none"
+                >
+                  10,000
+                </p>
+                <p class="text-blue-200 text-lg font-bold mt-1">جنيه بس</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Support & Bonuses Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10 md:mb-12">
+            <!-- Bonus 1: Templates Library -->
+            <div
+              class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 md:p-8"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/15 flex items-center justify-center shrink-0"
+                >
+                  <i class="fas fa-layer-group text-primary text-lg"></i>
+                </div>
+                <div>
+                  <h4
+                    class="text-slate-900 font-extrabold text-base md:text-lg mb-2"
+                  >
+                    Templates Library جاهزة
+                  </h4>
+                  <p class="text-slate-500 text-sm leading-relaxed mb-3">
+                    بعد الدبلومة هيكون معاك HR Dashboard Templates Library
+                    جاهزة، تشمل أهم الـHR KPIs & Metrics اللي هتحتاجها في شغلك.
+                  </p>
+                  <div
+                    class="inline-flex items-center gap-2 bg-primary/8 text-primary text-xs font-bold px-3 py-1.5 rounded-lg border border-primary/15"
+                  >
+                    <i class="fas fa-check-circle text-[10px]"></i>
+                    يعني تقدر تظهر نتائج شغلك بشكل أسرع، وتبدأ تقدم
+                    للـManagement تقارير وDashboards احترافية من أول يوم.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bonus 2: Free Consultation -->
+            <div
+              class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 md:p-8"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 rounded-xl bg-amber-50 border border-amber-100 flex items-center justify-center shrink-0"
+                >
+                  <i class="fas fa-comments text-amber-600 text-lg"></i>
+                </div>
+                <div>
+                  <h4
+                    class="text-slate-900 font-extrabold text-base md:text-lg mb-2"
+                  >
+                    🎁 استشارة مجانية
+                  </h4>
+                  <p class="text-slate-500 text-sm leading-relaxed mb-3">
+                    هيكون معاك استشارة مجانية بعد الكورس لو واجهتك أي مشكلة في
+                    تحليل بيانات أو بناء Dashboard خاصة بشركتك.
+                  </p>
+                  <div
+                    class="inline-flex items-center gap-2 bg-amber-50 text-amber-700 text-xs font-bold px-3 py-1.5 rounded-lg border border-amber-100"
+                  >
+                    <i class="fas fa-check-circle text-[10px]"></i>
+                    علشان هدفنا إنك تقدر تطبقها على شغلك الحقيقي وتحل مشاكل
+                    الـHR في شركتك مش مجرد معلومات.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Guarantee Banner -->
           <div
-            class="bg-primary text-white p-6 md:p-8 rounded-2xl shadow-xl inline-block mt-6 md:mt-8 mb-10 md:mb-16 w-full md:w-auto"
+            class="relative rounded-2xl overflow-hidden"
+            style="
+              background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            "
           >
-            <p class="text-lg md:text-2xl font-bold mb-2">
-              تكلفة الاستثمار ده كله بـ
-            </p>
-            <p class="text-4xl md:text-5xl font-extrabold text-accent">
-              10000 جنيه بس ..
-            </p>
+            <!-- Top amber accent line -->
+            <div
+              class="relative z-10 px-6 md:px-12 py-10 md:py-12 flex flex-col md:flex-row items-center gap-8 text-center md:text-right"
+            >
+              <!-- Shield Icon -->
+              <div
+                class="shrink-0 w-20 h-20 rounded-full flex items-center justify-center border-4 border-amber-400/30 shadow-lg"
+                style="background: linear-gradient(135deg, #f59e0b, #d97706)"
+              >
+                <i class="fas fa-shield-alt text-white text-3xl"></i>
+              </div>
+
+              <!-- Text -->
+              <div class="flex-1">
+                <h3 class="text-2xl md:text-3xl font-extrabold text-white mb-2">
+                  الضمان الذهبي <span class="text-amber-400">100%</span>
+                </h3>
+                <p
+                  class="text-slate-300 text-sm md:text-base font-medium leading-relaxed mb-4"
+                >
+                  تقدر تجرب الكورس براحتك.. ولو حسيت إنك مستفدتش منه؟
+                </p>
+                <div
+                  class="inline-flex items-center gap-3 bg-white/8 border border-white/15 rounded-xl px-5 py-3 backdrop-blur-sm"
+                >
+                  <i
+                    class="fas fa-rotate-left text-amber-400 text-lg shrink-0"
+                  ></i>
+                  <p
+                    class="text-white font-bold text-sm md:text-base text-right"
+                  >
+                    استرد فلوسك كاملة في
+                    <span class="text-amber-300 font-extrabold">أول أسبوع</span>
+                    — من غير إبداء أي أسباب!
+                  </p>
+                </div>
+                <p class="text-slate-500 text-xs mt-4 font-medium">
+                  الريسك علينا إحنا 100% — قرارك دلوقتي بدون أي مخاطرة.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-
-        <!-- Bonuses & Templates -->
-        <article
-          class="bg-white rounded-2xl md:rounded-3xl shadow-sm md:shadow-[0_15px_50px_rgba(0,0,0,0.08)] border border-slate-100 overflow-hidden relative"
-        >
-          <div
-            class="absolute top-0 left-0 w-full h-1.5 md:h-2 bg-gradient-to-r from-secondary to-accent"
-          ></div>
-
-          <header class="p-6 md:p-12 text-center border-b border-slate-100">
-            <h3 class="text-xl md:text-3xl font-extrabold text-slate-900">
-              طيب مفيش ضمان و ايه شكل الدعم اللي بتقدم ؟؟
-            </h3>
-          </header>
-
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x md:divide-x-reverse divide-slate-100"
-          >
-            <!-- Bonus 1 -->
-            <div class="p-6 md:p-10 hover:bg-slate-50 transition-colors">
-              <div
-                class="w-12 h-12 md:w-16 md:h-16 bg-blue-100 text-secondary rounded-full flex items-center justify-center text-2xl md:text-3xl mb-4 md:mb-6 mx-auto"
-              >
-                <i class="fas fa-layer-group"></i>
-              </div>
-              <h4
-                class="text-xl md:text-2xl font-bold text-center text-primary mb-3 md:mb-4"
-              >
-                Templates Library جاهزة
-              </h4>
-              <p
-                class="text-sm md:text-lg text-slate-600 font-semibold leading-relaxed text-center mb-3"
-              >
-                بعد الدبلومة هيكون معاك HR Dashboard Templates Library جاهزة،
-                تشمل أهم الـHR KPIs & Metrics اللي هتحتاجها في شغلك.
-              </p>
-              <p
-                class="text-sm md:text-lg text-slate-800 font-bold leading-relaxed text-center mt-3 md:mt-4 bg-blue-50 p-3 rounded-lg"
-              >
-                يعني تقدر تظهر نتائج شغلك بشكل أسرع، وتبدأ تقدم للـManagement
-                تقارير وDashboards احترافية من أول يوم.
-              </p>
-            </div>
-
-            <!-- Bonus 2 -->
-            <div class="p-6 md:p-10 hover:bg-slate-50 transition-colors">
-              <div
-                class="w-12 h-12 md:w-16 md:h-16 bg-orange-100 text-accent rounded-full flex items-center justify-center text-2xl md:text-3xl mb-4 md:mb-6 mx-auto"
-              >
-                <i class="fas fa-comments"></i>
-              </div>
-              <h4
-                class="text-xl md:text-2xl font-bold text-center text-primary mb-3 md:mb-4"
-              >
-                🎁 استشارة مجانية
-              </h4>
-              <p
-                class="text-sm md:text-lg text-slate-600 font-semibold leading-relaxed text-center mb-3"
-              >
-                هيكون معاك استشارة مجانية بعد الكورس لو واجهتك أي مشكلة في تحليل
-                بيانات أو بناء Dashboard خاصة بشركتك.
-              </p>
-              <p
-                class="text-sm md:text-lg text-slate-800 font-bold leading-relaxed text-center mt-3 md:mt-4 bg-orange-50 p-3 rounded-lg"
-              >
-                علشان هدفنا إنك تقدر تطبقها على شغلك الحقيقي وتحل مشاكل الـHR في
-                شركتك مش مجرد معلومات.
-              </p>
-            </div>
-          </div>
-        </article>
-
-        <!-- Golden Guarantee Box -->
-        <article
-          class="mt-8 md:mt-12 card-3d p-8 md:p-12 border-t-8 relative overflow-hidden bg-slate-900 shadow-xl"
-          style="
-            --border-color: #0f172a;
-            --border-hover: #f59e0b;
-            border-top-color: #f59e0b;
-          "
-        >
-          <div
-            class="absolute -right-20 -top-20 w-64 h-64 bg-accent/20 rounded-full blur-3xl z-0 pointer-events-none"
-          ></div>
-          <div
-            class="absolute -left-20 -bottom-20 w-64 h-64 bg-secondary/20 rounded-full blur-3xl z-0 pointer-events-none"
-          ></div>
-
-          <div class="relative z-10 text-center">
-            <div
-              class="w-20 h-20 bg-gradient-to-br from-yellow-300 to-accent text-slate-900 rounded-full flex items-center justify-center text-4xl mb-6 mx-auto shadow-[0_0_30px_rgba(245,158,11,0.4)] border-4 border-slate-800"
-            >
-              <i class="fas fa-shield-alt"></i>
-            </div>
-
-            <h3
-              class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-accent mb-4 drop-shadow-sm"
-            >
-              الضمان الذهبي الاستثنائي 100%
-            </h3>
-
-            <p
-              class="text-xl md:text-2xl text-white font-bold leading-loose mb-6"
-            >
-              تقدر تجرب الكورس براحتك.. ولو حسيت إنك مستفدتش منه؟
-            </p>
-
-            <div
-              class="bg-white/10 p-5 md:p-6 rounded-2xl border border-white/20 shadow-inner inline-block transform hover:scale-105 transition-transform duration-300"
-            >
-              <p
-                class="text-2xl md:text-3xl font-extrabold text-white leading-relaxed"
-              >
-                استرد فلوسك كاملة في
-                <span class="text-yellow-300">أول أسبوع</span>
-                <br />
-                <span
-                  class="text-accent underline decoration-wavy decoration-accent underline-offset-8 mt-4 inline-block"
-                  >من غير إبداء أي أسباب!</span
-                >
-              </p>
-            </div>
-            <p class="text-slate-400 mt-8 font-semibold text-sm md:text-lg">
-              الريسك علينا إحنا 100%.. قرارك دلوقتي بدون أي مخاطرة.
-            </p>
-          </div>
-        </article>
       </section>
 
       <!-- ==================== CURRICULUM CHECKLIST SECTION ==================== -->
@@ -2067,360 +2118,608 @@
       </section>
 
       <!-- ==================== FAQ SECTION ==================== -->
-      <section
-        id="faq"
-        class="py-12 md:py-16 px-4 bg-white border-t border-slate-200"
-      >
-        <div class="max-w-3xl mx-auto">
-          <h2
-            class="text-2xl md:text-4xl font-extrabold text-center text-primary mb-8 md:mb-10"
-          >
-            الأسئلة الشائعة
-          </h2>
+      <section id="faq" class="relative py-16 md:py-24 px-4 overflow-hidden">
+        <!-- Background -->
+        <div
+          class="absolute inset-0 -z-10"
+          style="background: linear-gradient(180deg, #f8fafc 0%, #eff6ff 100%)"
+        ></div>
+        <div
+          class="absolute top-0 right-1/4 w-72 h-72 rounded-full -z-10"
+          style="
+            background: radial-gradient(
+              circle,
+              rgba(53, 117, 184, 0.08),
+              transparent 70%
+            );
+            filter: blur(60px);
+          "
+        ></div>
+        <div
+          class="absolute bottom-0 left-1/4 w-72 h-72 rounded-full -z-10"
+          style="
+            background: radial-gradient(
+              circle,
+              rgba(59, 130, 246, 0.07),
+              transparent 70%
+            );
+            filter: blur(60px);
+          "
+        ></div>
 
+        <div class="max-w-5xl mx-auto">
+          <!-- Heading -->
+          <div class="text-center mb-12 md:mb-16">
+            <h2 class="text-2xl md:text-4xl font-extrabold text-primary">
+              الأسئلة الشائعة
+            </h2>
+            <p class="text-slate-500 font-semibold mt-2 text-sm md:text-base">
+              كل اللي في بالك — بنجاوب عليه هنا.
+            </p>
+          </div>
+
+          <!-- FAQ Accordion -->
           <div class="space-y-3 md:space-y-4">
             <!-- FAQ 1 -->
             <div
-              class="border border-slate-200 rounded-lg overflow-hidden shadow-sm"
+              class="faq-item rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5"
             >
               <button
                 type="button"
-                class="faq-btn w-full text-right p-4 md:p-5 font-bold text-base md:text-lg text-slate-800 bg-slate-50 flex justify-between items-center hover:bg-slate-100 transition-colors"
+                class="faq-btn w-full text-right px-5 md:px-7 py-5 md:py-6 flex items-center gap-4 group"
+                id="faq-btn-1"
               >
-                <span>طب هل محتاج تكون جامد في الـData؟</span>
-                <i
-                  class="fas fa-chevron-down text-secondary transition-transform duration-300"
-                ></i>
+                <span
+                  class="shrink-0 w-9 h-9 rounded-xl flex items-center justify-center text-sm font-extrabold text-white transition-all duration-300"
+                  style="background: linear-gradient(135deg, #3575b8, #3b82f6)"
+                  >01</span
+                >
+                <span
+                  class="flex-1 font-bold text-base md:text-lg text-slate-800 group-hover:text-primary transition-colors duration-200"
+                  >طب هل محتاج تكون جامد في الـData؟</span
+                >
+                <span
+                  class="faq-icon shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300"
+                  style="background: #f1f5f9"
+                >
+                  <i
+                    class="fas fa-chevron-down text-slate-500 text-sm transition-transform duration-300"
+                  ></i>
+                </span>
               </button>
               <div
-                class="faq-content hidden p-4 md:p-5 text-slate-700 font-semibold text-sm md:text-base leading-relaxed bg-white border-t border-slate-100"
+                class="faq-content"
+                style="
+                  max-height: 0;
+                  overflow: hidden;
+                  transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+                "
               >
-                لأ. البرنامج معمول عشان يبدأ معاك خطوة بخطوة. مش مطلوب تكون Data
-                Analyst. ومش مطلوب تكون مبرمج. ومش مطلوب تكون خريج Computer
-                Science. المهم إنك تكون HR و مهتم بمجال الـHR، وعندك رغبة حقيقية
-                إنك تطور نفسك وتتعلم تستخدم البيانات في شغلك.
+                <div class="px-5 md:px-7 pb-6 pt-1 border-t border-slate-100">
+                  <p
+                    class="text-slate-600 font-semibold text-sm md:text-base leading-relaxed"
+                  >
+                    لأ. البرنامج معمول عشان يبدأ معاك خطوة بخطوة. مش مطلوب تكون
+                    Data Analyst. ومش مطلوب تكون مبرمج. ومش مطلوب تكون خريج
+                    Computer Science. المهم إنك تكون HR ومهتم بمجال الـHR، وعندك
+                    رغبة حقيقية إنك تطور نفسك وتتعلم تستخدم البيانات في شغلك.
+                  </p>
+                </div>
               </div>
             </div>
 
             <!-- FAQ 2 -->
             <div
-              class="border border-slate-200 rounded-lg overflow-hidden shadow-sm"
+              class="faq-item rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5"
             >
               <button
                 type="button"
-                class="faq-btn w-full text-right p-4 md:p-5 font-bold text-base md:text-lg text-slate-800 bg-slate-50 flex justify-between items-center hover:bg-slate-100 transition-colors"
+                class="faq-btn w-full text-right px-5 md:px-7 py-5 md:py-6 flex items-center gap-4 group"
+                id="faq-btn-2"
               >
-                <span>"بس أنا مش شاطر في Excel!"</span>
-                <i
-                  class="fas fa-chevron-down text-secondary transition-transform duration-300"
-                ></i>
+                <span
+                  class="shrink-0 w-9 h-9 rounded-xl flex items-center justify-center text-sm font-extrabold text-white transition-all duration-300"
+                  style="background: linear-gradient(135deg, #3575b8, #3b82f6)"
+                  >02</span
+                >
+                <span
+                  class="flex-1 font-bold text-base md:text-lg text-slate-800 group-hover:text-primary transition-colors duration-200"
+                  >"بس أنا مش شاطر في Excel!"</span
+                >
+                <span
+                  class="faq-icon shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300"
+                  style="background: #f1f5f9"
+                >
+                  <i
+                    class="fas fa-chevron-down text-slate-500 text-sm transition-transform duration-300"
+                  ></i>
+                </span>
               </button>
               <div
-                class="faq-content hidden p-4 md:p-5 text-slate-700 font-semibold text-sm md:text-base leading-relaxed bg-white border-t border-slate-100"
+                class="faq-content"
+                style="
+                  max-height: 0;
+                  overflow: hidden;
+                  transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+                "
               >
-                وده تحديدًا سبب يخليك تبدأ. إحنا مش بنقولك: تعالى وإنت محترف.
-                إحنا بنقولك: تعالى وإحنا نمشي معاك خطوة بخطوة.
+                <div class="px-5 md:px-7 pb-6 pt-1 border-t border-slate-100">
+                  <p
+                    class="text-slate-600 font-semibold text-sm md:text-base leading-relaxed"
+                  >
+                    وده تحديدًا سبب يخليك تبدأ. إحنا مش بنقولك: تعالى وإنت
+                    محترف. إحنا بنقولك: تعالى وإحنا نمشي معاك خطوة بخطوة.
+                  </p>
+                </div>
               </div>
             </div>
 
             <!-- FAQ 3 -->
             <div
-              class="border border-slate-200 rounded-lg overflow-hidden shadow-sm"
+              class="faq-item rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5"
             >
               <button
                 type="button"
-                class="faq-btn w-full text-right p-4 md:p-5 font-bold text-base md:text-lg text-slate-800 bg-slate-50 flex justify-between items-center hover:bg-slate-100 transition-colors"
+                class="faq-btn w-full text-right px-5 md:px-7 py-5 md:py-6 flex items-center gap-4 group"
+                id="faq-btn-3"
               >
-                <span>"طب Power BI مش صعب؟"</span>
-                <i
-                  class="fas fa-chevron-down text-secondary transition-transform duration-300"
-                ></i>
+                <span
+                  class="shrink-0 w-9 h-9 rounded-xl flex items-center justify-center text-sm font-extrabold text-white transition-all duration-300"
+                  style="background: linear-gradient(135deg, #3575b8, #3b82f6)"
+                  >03</span
+                >
+                <span
+                  class="flex-1 font-bold text-base md:text-lg text-slate-800 group-hover:text-primary transition-colors duration-200"
+                  >"طب Power BI مش صعب؟"</span
+                >
+                <span
+                  class="faq-icon shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300"
+                  style="background: #f1f5f9"
+                >
+                  <i
+                    class="fas fa-chevron-down text-slate-500 text-sm transition-transform duration-300"
+                  ></i>
+                </span>
               </button>
               <div
-                class="faq-content hidden p-4 md:p-5 text-slate-700 font-semibold text-sm md:text-base leading-relaxed bg-white border-t border-slate-100"
+                class="faq-content"
+                style="
+                  max-height: 0;
+                  overflow: hidden;
+                  transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+                "
               >
-                أي Tool جديدة في الأول شكلها بيخوف. لكن المشكلة مش في Power BI
-                نفسه. المشكلة لما تتعلمه من غير Context. إنما لما تتعلم: Power
-                BI + HR Data + HR Problems هتفهم أنت بتعمل إيه وليه بتعمله.
+                <div class="px-5 md:px-7 pb-6 pt-1 border-t border-slate-100">
+                  <p
+                    class="text-slate-600 font-semibold text-sm md:text-base leading-relaxed"
+                  >
+                    أي Tool جديدة في الأول شكلها بيخوف. لكن المشكلة مش في Power
+                    BI نفسه. المشكلة لما تتعلمه من غير Context. إنما لما تتعلم:
+                    Power BI + HR Data + HR Problems — هتفهم أنت بتعمل إيه وليه
+                    بتعمله.
+                  </p>
+                </div>
               </div>
             </div>
 
             <!-- FAQ 4 -->
             <div
-              class="border border-slate-200 rounded-lg overflow-hidden shadow-sm"
+              class="faq-item rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5"
             >
               <button
                 type="button"
-                class="faq-btn w-full text-right p-4 md:p-5 font-bold text-base md:text-lg text-slate-800 bg-slate-50 flex justify-between items-center hover:bg-slate-100 transition-colors"
+                class="faq-btn w-full text-right px-5 md:px-7 py-5 md:py-6 flex items-center gap-4 group"
+                id="faq-btn-4"
               >
-                <span>"أنا HR ومش فاهم في Statistics!"</span>
-                <i
-                  class="fas fa-chevron-down text-secondary transition-transform duration-300"
-                ></i>
+                <span
+                  class="shrink-0 w-9 h-9 rounded-xl flex items-center justify-center text-sm font-extrabold text-white transition-all duration-300"
+                  style="background: linear-gradient(135deg, #3575b8, #3b82f6)"
+                  >04</span
+                >
+                <span
+                  class="flex-1 font-bold text-base md:text-lg text-slate-800 group-hover:text-primary transition-colors duration-200"
+                  >"أنا HR ومش فاهم في Statistics!"</span
+                >
+                <span
+                  class="faq-icon shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300"
+                  style="background: #f1f5f9"
+                >
+                  <i
+                    class="fas fa-chevron-down text-slate-500 text-sm transition-transform duration-300"
+                  ></i>
+                </span>
               </button>
               <div
-                class="faq-content hidden p-4 md:p-5 text-slate-700 font-semibold text-sm md:text-base leading-relaxed bg-white border-t border-slate-100"
+                class="faq-content"
+                style="
+                  max-height: 0;
+                  overflow: hidden;
+                  transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+                "
               >
-                مش مطلوب منك تكون عالم إحصاء. المطلوب إنك تفهم البيانات وتعرف
-                تستخدم التحليل المناسب للمشكلة. إحنا مش بنجهزك تكون
-                Statistician. إحنا بنجهزك تكون HR يعرف يستخدم الـAnalytics.
+                <div class="px-5 md:px-7 pb-6 pt-1 border-t border-slate-100">
+                  <p
+                    class="text-slate-600 font-semibold text-sm md:text-base leading-relaxed"
+                  >
+                    مش مطلوب منك تكون عالم إحصاء. المطلوب إنك تفهم البيانات
+                    وتعرف تستخدم التحليل المناسب للمشكلة. إحنا مش بنجهزك تكون
+                    Statistician. إحنا بنجهزك تكون HR يعرف يستخدم الـAnalytics.
+                  </p>
+                </div>
               </div>
             </div>
 
             <!-- FAQ 5 -->
             <div
-              class="border border-slate-200 rounded-lg overflow-hidden shadow-sm"
+              class="faq-item rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5"
             >
               <button
                 type="button"
-                class="faq-btn w-full text-right p-4 md:p-5 font-bold text-base md:text-lg text-slate-800 bg-slate-50 flex justify-between items-center hover:bg-slate-100 transition-colors"
+                class="faq-btn w-full text-right px-5 md:px-7 py-5 md:py-6 flex items-center gap-4 group"
+                id="faq-btn-5"
               >
-                <span>"طب هل HR Analytics فعلًا هيفرق معايا؟"</span>
-                <i
-                  class="fas fa-chevron-down text-secondary transition-transform duration-300"
-                ></i>
+                <span
+                  class="shrink-0 w-9 h-9 rounded-xl flex items-center justify-center text-sm font-extrabold text-white transition-all duration-300"
+                  style="background: linear-gradient(135deg, #3575b8, #3b82f6)"
+                  >05</span
+                >
+                <span
+                  class="flex-1 font-bold text-base md:text-lg text-slate-800 group-hover:text-primary transition-colors duration-200"
+                  >"طب هل HR Analytics فعلًا هيفرق معايا؟"</span
+                >
+                <span
+                  class="faq-icon shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300"
+                  style="background: #f1f5f9"
+                >
+                  <i
+                    class="fas fa-chevron-down text-slate-500 text-sm transition-transform duration-300"
+                  ></i>
+                </span>
               </button>
               <div
-                class="faq-content hidden p-4 md:p-5 text-slate-700 font-semibold text-sm md:text-base leading-relaxed bg-white border-t border-slate-100"
+                class="faq-content"
+                style="
+                  max-height: 0;
+                  overflow: hidden;
+                  transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+                "
               >
-                تخيل إن عندك شركتين. في الأولى الـHR بيقول: "حاسس إن الموظفين مش
-                مبسوطين." وفي التانية الـHR بيقول: "الـData بتوضح إن معدل
-                الـTurnover زاد بنسبة X، وأعلى معدل موجود في Department معين،
-                وأغلب حالات الخروج مرتبطة بعوامل محددة... ودي توصياتي." تفتكر
-                الإدارة هتسمع لمين أكتر؟ ده الفرق.
-                <br /><br />
-                والأهم... إحنا مش بنحاول نحولك لـData Analyst ونخليك تنسى الـHR.
-                العكس. إحنا عايزينك تستخدم فهمك للـHR وتضيف له قوة الـData. لأنك
-                أصلًا فاهم الـPeople.
+                <div class="px-5 md:px-7 pb-6 pt-1 border-t border-slate-100">
+                  <p
+                    class="text-slate-600 font-semibold text-sm md:text-base leading-relaxed"
+                  >
+                    تخيل إن عندك شركتين. في الأولى الـHR بيقول: "حاسس إن
+                    الموظفين مش مبسوطين." وفي التانية الـHR بيقول: "الـData
+                    بتوضح إن معدل الـTurnover زاد بنسبة X، وأعلى معدل موجود في
+                    Department معين، وأغلب حالات الخروج مرتبطة بعوامل محددة...
+                    ودي توصياتي." تفتكر الإدارة هتسمع لمين أكتر؟ ده الفرق.
+                    <br /><br />
+                    والأهم... إحنا مش بنحاول نحولك لـData Analyst ونخليك تنسى
+                    الـHR. العكس. إحنا عايزينك تستخدم فهمك للـHR وتضيف له قوة
+                    الـData. لأنك أصلًا فاهم الـPeople.
+                  </p>
+                </div>
               </div>
             </div>
 
             <!-- FAQ 6 -->
             <div
-              class="border border-slate-200 rounded-lg overflow-hidden shadow-sm"
+              class="faq-item rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5"
             >
               <button
                 type="button"
-                class="faq-btn w-full text-right p-4 md:p-5 font-bold text-base md:text-lg text-slate-800 bg-slate-50 flex justify-between items-center hover:bg-slate-100 transition-colors"
+                class="faq-btn w-full text-right px-5 md:px-7 py-5 md:py-6 flex items-center gap-4 group"
+                id="faq-btn-6"
               >
-                <span>أنا شغال HR بالفعل... هل الكورس هيفيدني؟</span>
-                <i
-                  class="fas fa-chevron-down text-secondary transition-transform duration-300"
-                ></i>
+                <span
+                  class="shrink-0 w-9 h-9 rounded-xl flex items-center justify-center text-sm font-extrabold text-white transition-all duration-300"
+                  style="background: linear-gradient(135deg, #3575b8, #3b82f6)"
+                  >06</span
+                >
+                <span
+                  class="flex-1 font-bold text-base md:text-lg text-slate-800 group-hover:text-primary transition-colors duration-200"
+                  >أنا شغال HR بالفعل... هل الكورس هيفيدني؟</span
+                >
+                <span
+                  class="faq-icon shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300"
+                  style="background: #f1f5f9"
+                >
+                  <i
+                    class="fas fa-chevron-down text-slate-500 text-sm transition-transform duration-300"
+                  ></i>
+                </span>
               </button>
               <div
-                class="faq-content hidden p-4 md:p-5 text-slate-700 font-semibold text-sm md:text-base leading-relaxed bg-white border-t border-slate-100"
+                class="faq-content"
+                style="
+                  max-height: 0;
+                  overflow: hidden;
+                  transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+                "
               >
-                وده من أهم الناس اللي البرنامج معمول عشانهم. لأنك عندك بالفعل
-                فهم للـHR، وإضافة الـAnalytics هتخليك تستخدم البيانات بشكل أقوى
-                في شغلك.
+                <div class="px-5 md:px-7 pb-6 pt-1 border-t border-slate-100">
+                  <p
+                    class="text-slate-600 font-semibold text-sm md:text-base leading-relaxed"
+                  >
+                    وده من أهم الناس اللي البرنامج معمول عشانهم. لأنك عندك
+                    بالفعل فهم للـHR، وإضافة الـAnalytics هتخليك تستخدم البيانات
+                    بشكل أقوى في شغلك.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+          <!-- /accordion -->
         </div>
+        <!-- /container -->
+
+        <style>
+          .faq-item.faq-open {
+            border-color: rgba(53, 117, 184, 0.35);
+            box-shadow: 0 4px 24px rgba(53, 117, 184, 0.1);
+          }
+          .faq-item.faq-open .faq-icon {
+            background: #3575b8 !important;
+          }
+          .faq-item.faq-open .faq-icon i {
+            color: white !important;
+            transform: rotate(180deg);
+          }
+        </style>
       </section>
 
       <!-- ==================== REGISTRATION & PAYMENT SECTION ==================== -->
       <section
         id="registration-form"
-        class="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16 md:py-24 px-4 text-center border-t border-slate-700 relative overflow-hidden"
+        class="relative py-16 md:py-24 px-4 overflow-hidden"
+        style="
+          background: linear-gradient(
+            135deg,
+            #0a0f1e 0%,
+            #0f172a 60%,
+            #091524 100%
+          );
+        "
       >
+        <!-- Subtle glow -->
         <div
-          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[600px] bg-secondary/5 rounded-full blur-[80px] z-0 pointer-events-none"
+          class="absolute inset-0 pointer-events-none"
+          style="
+            background: radial-gradient(
+              ellipse at 60% 50%,
+              rgba(53, 117, 184, 0.12) 0%,
+              transparent 65%
+            );
+          "
         ></div>
 
-        <div class="max-w-4xl mx-auto mb-10 md:mb-14 relative z-10">
-          <h2 class="text-3xl md:text-5xl font-extrabold mb-4 md:mb-6">
-            من الآخر...
-          </h2>
-          <p
-            class="text-lg md:text-2xl mb-4 font-bold text-slate-300 leading-relaxed md:leading-loose"
-          >
-            الشركات مش محتاجة HR يعرف يجمع أرقام وخلاص. الشركات محتاجة HR يعرف
-            يقول:
-          </p>
-          <p
-            class="text-2xl md:text-4xl font-extrabold text-accent mb-6 md:mb-8"
-          >
-            "الأرقام بتقول إيه؟" و "نعمل إيه بناءً عليها؟"
-          </p>
-          <p class="text-xl md:text-3xl mb-8 md:mb-10 font-bold">
-            وده اللي بنسميه:
-            <span
-              class="bg-white text-primary px-3 py-1 md:px-4 md:py-2 rounded-xl border-2 border-primary mx-1 md:mx-2 inline-block"
-              >HR Analytics</span
-            >
-          </p>
-          <p
-            class="text-base md:text-2xl text-red-400 font-extrabold bg-red-400/10 inline-block px-4 py-2 md:px-6 md:py-3 rounded-full border border-red-400/20"
-          >
-            ابدأ دلوقتي... لأن بعد سنة ممكن تبص على الفرصة دي وتقول: "يا ريتني
-            كنت بدأت من سنة."
-          </p>
-        </div>
-
-        <!-- Registration Form Card -->
-        <div
-          class="max-w-xl mx-auto glass-card p-6 md:p-12 rounded-2xl md:rounded-[2.5rem] shadow-xl border-2 border-white/20 text-slate-900 text-right relative z-10"
-        >
+        <div class="max-w-6xl mx-auto relative z-10">
           <div
-            class="absolute top-0 left-0 w-full h-2 md:h-3 bg-gradient-to-r from-secondary via-blue-400 to-accent"
-          ></div>
+            class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center"
+          >
+            <!-- ── Left: Copy & Trust ── -->
+            <div class="text-right">
+              <h2
+                class="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-5"
+              >
+                ابدأ رحلتك كـ<span
+                  style="
+                    background: linear-gradient(135deg, #60a5fa, #3575b8);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                  "
+                  >HR Analyst</span
+                >
+              </h2>
 
-          <div class="text-center mb-6 md:mb-8">
-            <div
-              class="w-16 h-16 md:w-20 md:h-20 bg-blue-50 text-primary rounded-full flex items-center justify-center text-2xl md:text-3xl mx-auto mb-3 md:mb-4 shadow-inner border border-blue-100"
-            >
-              <i class="fas fa-rocket"></i>
+              <p
+                class="text-slate-400 text-base md:text-lg font-semibold leading-relaxed mb-8"
+              >
+                مش عشان تضيف Certificate للـCV... لكن عشان تضيف Skill حقيقية
+                بتفرق في شغلك وراتبك.
+              </p>
+
+              <!-- Trust points -->
+              <ul class="space-y-4 mb-10">
+                <li class="flex items-center gap-3">
+                  <span
+                    class="shrink-0 w-9 h-9 rounded-xl flex items-center justify-center"
+                    style="
+                      background: rgba(4, 102, 58, 0.2);
+                      border: 1px solid rgba(4, 102, 58, 0.4);
+                    "
+                  >
+                    <i class="fas fa-shield-halved text-green-400 text-sm"></i>
+                  </span>
+                  <span
+                    class="text-slate-300 font-semibold text-sm md:text-base"
+                    >ضمان استرداد كامل خلال أول أسبوع</span
+                  >
+                </li>
+                <li class="flex items-center gap-3">
+                  <span
+                    class="shrink-0 w-9 h-9 rounded-xl flex items-center justify-center"
+                    style="
+                      background: rgba(53, 117, 184, 0.2);
+                      border: 1px solid rgba(53, 117, 184, 0.4);
+                    "
+                  >
+                    <i class="fas fa-lock text-blue-400 text-sm"></i>
+                  </span>
+                  <span
+                    class="text-slate-300 font-semibold text-sm md:text-base"
+                    >دفع آمن ومحمي 100%</span
+                  >
+                </li>
+                <li class="flex items-center gap-3">
+                  <span
+                    class="shrink-0 w-9 h-9 rounded-xl flex items-center justify-center"
+                    style="
+                      background: rgba(245, 158, 11, 0.15);
+                      border: 1px solid rgba(245, 158, 11, 0.35);
+                    "
+                  >
+                    <i class="fas fa-infinity text-amber-400 text-sm"></i>
+                  </span>
+                  <span
+                    class="text-slate-300 font-semibold text-sm md:text-base"
+                    >وصول مدى الحياة للمحتوى والتحديثات</span
+                  >
+                </li>
+              </ul>
+
+              <!-- Price display -->
+              <div
+                class="inline-block rounded-2xl px-6 py-4"
+                style="
+                  background: rgba(255, 255, 255, 0.04);
+                  border: 1px solid rgba(255, 255, 255, 0.1);
+                "
+              >
+                <p class="text-slate-500 text-xs font-bold mb-1">
+                  سعر البرنامج
+                </p>
+                <p class="text-white font-extrabold text-3xl md:text-4xl">
+                  10,000 <span class="text-lg text-slate-400">جنيه</span>
+                </p>
+                <p class="text-green-400 text-xs font-bold mt-1">
+                  استثمار في مستقبلك المهني
+                </p>
+              </div>
             </div>
-            <h3
-              class="text-2xl md:text-4xl font-extrabold text-primary mb-2 md:mb-3"
-            >
-              ابدأ رحلة HR Analyst
-            </h3>
-            <p class="text-slate-500 font-bold text-sm md:text-lg">
-              مش عشان تضيف Certificate للـCV... لكن عشان تضيف Skill حقيقية
-              لشغلك.
-            </p>
+
+            <!-- ── Right: Form Card ── -->
+            <div class="bg-white rounded-3xl p-8 md:p-10 shadow-2xl">
+              <h3
+                class="text-xl md:text-2xl font-extrabold text-slate-900 mb-1 text-right"
+              >
+                سجل بياناتك
+              </h3>
+              <p class="text-slate-500 text-sm font-semibold mb-7 text-right">
+                هنتواصل معاك فور التسجيل لإتمام الخطوات.
+              </p>
+
+              <form id="payment-form" class="space-y-5">
+                <!-- Name -->
+                <div>
+                  <label
+                    for="fullName"
+                    class="block text-slate-700 font-bold mb-1.5 text-sm text-right"
+                    >الاسم بالكامل</label
+                  >
+                  <div class="relative">
+                    <i
+                      class="fas fa-user absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm"
+                    ></i>
+                    <input
+                      type="text"
+                      id="fullName"
+                      name="fullName"
+                      placeholder="اكتب اسمك هنا"
+                      required
+                      class="w-full pr-11 pl-4 py-3.5 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 font-semibold text-sm placeholder-slate-400 focus:outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-100 transition-all text-right"
+                    />
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div>
+                  <label
+                    for="email"
+                    class="block text-slate-700 font-bold mb-1.5 text-sm text-right"
+                    >البريد الإلكتروني</label
+                  >
+                  <div class="relative">
+                    <i
+                      class="fas fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm"
+                    ></i>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="example@email.com"
+                      required
+                      dir="ltr"
+                      class="w-full pl-11 pr-4 py-3.5 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 font-semibold text-sm placeholder-slate-400 focus:outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-100 transition-all text-left"
+                    />
+                  </div>
+                </div>
+
+                <!-- Phone -->
+                <div>
+                  <label
+                    for="phone"
+                    class="block text-slate-700 font-bold mb-1.5 text-sm text-right"
+                    >رقم الواتساب</label
+                  >
+                  <div class="relative">
+                    <i
+                      class="fab fa-whatsapp absolute left-4 top-1/2 -translate-y-1/2 text-green-500 text-base"
+                    ></i>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="01xxxxxxxxx"
+                      required
+                      dir="ltr"
+                      class="w-full pl-11 pr-4 py-3.5 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 font-semibold text-sm placeholder-slate-400 focus:outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-100 transition-all text-left"
+                    />
+                  </div>
+                </div>
+
+                <!-- Submit -->
+                <button
+                  type="submit"
+                  id="submit-btn"
+                  class="w-full py-4 rounded-xl font-extrabold text-white text-base md:text-lg flex items-center justify-center gap-3 transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-lg mt-2"
+                  style="background: linear-gradient(135deg, #04663a, #059669)"
+                >
+                  <i class="fas fa-lock text-sm"></i>
+                  <span>إتمام الدفع — 10,000 جنيه</span>
+                </button>
+
+                <!-- Security note -->
+                <p
+                  class="text-center text-slate-400 text-xs font-semibold flex items-center justify-center gap-1.5 pt-1"
+                >
+                  <i class="fas fa-shield-alt text-green-500"></i>
+                  الدفع آمن ومشفر بالكامل
+                </p>
+              </form>
+            </div>
+            <!-- /form card -->
           </div>
-
-          <form id="payment-form" class="space-y-4 md:space-y-6">
-            <div>
-              <label
-                for="fullName"
-                class="block text-slate-800 font-extrabold mb-1 md:mb-2 text-sm md:text-lg"
-                >الاسم بالكامل</label
-              >
-              <div class="relative">
-                <i
-                  class="fas fa-user absolute right-3 md:right-4 top-1/2 -translate-y-1/2 text-slate-400"
-                  aria-hidden="true"
-                ></i>
-                <input
-                  type="text"
-                  id="fullName"
-                  name="fullName"
-                  placeholder="اكتب اسمك هنا"
-                  required
-                  class="w-full pr-10 pl-3 py-3 md:pr-12 md:pl-4 md:py-4 rounded-lg md:rounded-xl border-2 border-slate-200 focus:outline-none focus:ring-4 focus:ring-secondary/20 focus:border-secondary transition-all bg-slate-50 font-semibold text-base md:text-lg"
-                />
-              </div>
-            </div>
-
-            <div>
-              <label
-                for="email"
-                class="block text-slate-800 font-extrabold mb-1 md:mb-2 text-sm md:text-lg"
-                >البريد الإلكتروني</label
-              >
-              <div class="relative">
-                <i
-                  class="fas fa-envelope absolute left-3 md:left-4 top-1/2 -translate-y-1/2 text-slate-400"
-                  aria-hidden="true"
-                ></i>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="example@email.com"
-                  required
-                  dir="ltr"
-                  class="w-full pl-10 pr-3 py-3 md:pl-12 md:pr-4 md:py-4 rounded-lg md:rounded-xl border-2 border-slate-200 focus:outline-none focus:ring-4 focus:ring-secondary/20 focus:border-secondary transition-all bg-slate-50 font-semibold text-base md:text-lg text-left"
-                />
-              </div>
-            </div>
-
-            <div>
-              <label
-                for="phone"
-                class="block text-slate-800 font-extrabold mb-1 md:mb-2 text-sm md:text-lg"
-                >رقم الهاتف (واتساب)</label
-              >
-              <div class="relative">
-                <i
-                  class="fab fa-whatsapp absolute left-3 md:left-4 top-1/2 -translate-y-1/2 text-green-500 text-lg md:text-xl"
-                  aria-hidden="true"
-                ></i>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="01xxxxxxxxx"
-                  required
-                  dir="ltr"
-                  class="w-full pl-10 pr-3 py-3 md:pl-12 md:pr-4 md:py-4 rounded-lg md:rounded-xl border-2 border-slate-200 focus:outline-none focus:ring-4 focus:ring-secondary/20 focus:border-secondary transition-all bg-slate-50 font-semibold text-base md:text-lg text-left"
-                />
-              </div>
-            </div>
-
-            <button
-              type="submit"
-              id="submit-btn"
-              class="btn-3d w-full bg-gradient-to-r from-accent to-orange-600 text-white font-black py-4 md:py-5 px-4 md:px-6 rounded-xl text-lg md:text-2xl mt-4 md:mt-6 flex justify-center items-center gap-2 md:gap-3 border border-orange-400/50 relative overflow-hidden group"
-            >
-              <span
-                class="absolute inset-0 w-full h-full bg-white/20 transform -skew-x-12 -translate-x-full group-hover:animate-[shine_1.5s_ease-in-out_infinite]"
-              ></span>
-              <span class="relative z-10">إتمام الدفع (10,000 جنيه)</span>
-              <i class="fas fa-lock relative z-10" aria-hidden="true"></i>
-            </button>
-
-            <div
-              class="flex items-center justify-center gap-2 mt-3 md:mt-4 text-slate-500 font-bold bg-slate-50 py-2 rounded-lg border border-slate-100 text-sm md:text-base"
-            >
-              <i
-                class="fas fa-shield-alt text-green-500"
-                aria-hidden="true"
-              ></i>
-              <span>الدفع آمن ومحمي 100%</span>
-            </div>
-          </form>
+          <!-- /grid -->
         </div>
+        <!-- /container -->
       </section>
     </main>
 
     <!-- ==================== SEMANTIC FOOTER ==================== -->
-    <footer
-      class="bg-slate-950 text-slate-400 py-10 px-4 border-t border-slate-800 text-center text-sm md:text-base"
-    >
-      <div
-        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4"
-      >
-        <div class="flex items-center gap-2">
-          <img
-            src="images/logo.webp"
-            alt="EraaPro"
-            class="h-7 w-auto object-contain bg-white/95 rounded-full px-2 py-1"
-          />
-          <span class="text-white font-bold"
-            >EraaPro - Build Your Pro Career</span
-          >
-        </div>
-        <p>
-          © 2026 جميع الحقوق محفوظة لـ EraaPro. برنامج محلل الموارد البشرية.
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 px-4">
+      <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+
+        <!-- Logo -->
+        <a href="index.html">
+          <img src="images/logo.webp" alt="EraaPro" class="h-7 w-auto object-contain bg-white/90 rounded-full px-2 py-1" />
+        </a>
+
+        <!-- Copyright -->
+        <p class="text-center font-medium">
+          © 2026 جميع الحقوق محفوظة لـ <span class="text-slate-300 font-bold">EraaPro</span>
         </p>
-        <div class="flex items-center gap-4 text-lg text-slate-400">
-          <a
-            href="https://wa.me/201091897012"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="hover:text-green-400 transition-colors"
-            title="WhatsApp"
-          >
-            <i class="fab fa-whatsapp"></i>
-          </a>
-          <a
-            href="https://eraapro.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="hover:text-blue-400 transition-colors"
-            title="Website"
-          >
-            <i class="fas fa-globe"></i>
-          </a>
-        </div>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/201091897012" target="_blank" rel="noopener noreferrer"
+           class="flex items-center gap-2 text-slate-500 hover:text-green-400 transition-colors duration-200 font-semibold">
+          <i class="fab fa-whatsapp text-lg"></i>
+          <span class="text-xs">تواصل معنا</span>
+        </a>
+
       </div>
     </footer>
+
 
     <!-- ==================== FLOATING WHATSAPP BUTTON ==================== -->
     <aside aria-label="تواصل مباشر">
